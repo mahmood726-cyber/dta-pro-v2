@@ -1,0 +1,106 @@
+VERIFIER FINAL REVIEW: DTA Meta-Analysis Pro v3.7.html
+========================================================
+FILE: C:\HTML apps\DTA_Pro_Review\dta-pro-v3.7.html
+LINES: ~22,900 total
+DATE: 2026-02-07
+
+CRITICAL ISSUES IDENTIFIED:
+===========================
+
+ISSUE ID-001 | SEVERITY: CRITICAL | LINE: 20137 & 20139
+Problem: Division by Zero in iSquaredWithCI() function
+Description:
+  - Line 20137: const I2 = Math.max(0, (Q - df) / Q) * 100;
+  - When Q=0 (perfect homogeneity/no heterogeneity), division by Q produces NaN
+  - Line 20139: const H = Math.sqrt(Q / df);
+  - When k=1 (single study), df=0, division by zero produces Infinity
+  - No guard checks for Q=0 or df=0 edge cases
+
+Fix: Add guard conditions:
+  if (Q === 0 || df === 0) return { I2: 0, H: 1, ... };
+  const I2 = Q > 0 ? Math.max(0, (Q - df) / Q) * 100 : 0;
+  const H = df > 0 ? Math.sqrt(Q / df) : 1;
+
+---
+
+ISSUE ID-002 | SEVERITY: CRITICAL | LINE: 3213-3214
+Problem: Unguarded Division by C1/C2 in improvedBivariatePool()
+Description:
+  - const tau2_1 = Math.max(0, (Q1 - (n-1)) / C1);
+  - const tau2_2 = Math.max(0, (Q2 - (n-1)) / C2);
+  - C1 = sumW1 - (sum of w1²) / sumW1
+  - C2 = sumW2 - (sum of w2²) / sumW2
+  - C1 and C2 can equal zero or become negative in certain weighting scenarios
+  - No guard before division produces Infinity/-Infinity results
+  - Affects all downstream tau2-dependent calculations
+
+Fix: Add epsilon guard:
+  const tau2_1 = Math.max(0, (Q1 - (n-1)) / Math.max(1e-8, C1));
+  const tau2_2 = Math.max(0, (Q2 - (n-1)) / Math.max(1e-8, C2));
+
+---
+
+ISSUE ID-003 | SEVERITY: CRITICAL | LINE: 7466
+Problem: Unguarded Division by Zero in pooledDORAnalysis()
+Description:
+  - const I2 = Math.max(0, (Q - df) / Q * 100);
+  - When Q=0 (perfect homogeneity in DOR analysis), produces NaN
+  - No guard check before division
+  - Affects DOR I² heterogeneity output
+
+Fix: Add guard condition:
+  const I2 = Q > 0 ? Math.max(0, (Q - df) / Q * 100) : 0;
+
+---
+
+ISSUE ID-004 | SEVERITY: HIGH | LINE: 4260-4261 (metaRegression)
+Problem: Unguarded Division by C1/C2 in metaRegression()
+Description:
+  - let tau2_1 = Math.max(0, (Q1 - (n-1)) / C1);
+  - let tau2_2 = Math.max(0, (Q2 - (n-1)) / C2);
+  - Same formula as improvedBivariatePool - same C1/C2 zero risk
+  - Can produce Infinity during iterative likelihood optimization
+  - Breaks convergence in meta-regression analysis
+
+Fix: Same as Issue ID-002:
+  const tau2_1 = Math.max(0, (Q1 - (n-1)) / Math.max(1e-8, C1));
+  const tau2_2 = Math.max(0, (Q2 - (n-1)) / Math.max(1e-8, C2));
+
+---
+
+ISSUE ID-005 | SEVERITY: HIGH | LINE: 4650-4651 (bayesBivariatePool)
+Problem: Unguarded Division by C1/C2 in bayesBivariatePool()
+Description:
+  - let tau2_1 = Math.max(0, (Q1 - (n-1)) / C1);
+  - let tau2_2 = Math.max(0, (Q2 - (n-1)) / C2);
+  - Identical pattern to improvedBivariatePool and metaRegression
+  - Third instance of same unguarded formula
+
+Fix: Same epsilon guard:
+  const tau2_1 = Math.max(0, (Q1 - (n-1)) / Math.max(1e-8, C1));
+  const tau2_2 = Math.max(0, (Q2 - (n-1)) / Math.max(1e-8, C2));
+
+---
+
+SUMMARY:
+========
+- Total Critical Issues: 5
+- Pattern: Division by zero in 5 locations
+- Root Causes:
+  1. Missing guard for Q=0 in heterogeneity calculations (2 locations)
+  2. Missing guard for C1/C2=0 in tau² calculations (3 locations)
+  3. Missing guard for df=0 in H statistic calculation (1 location)
+
+- Affected Functions:
+  * improvedBivariatePool() - main pooling engine
+  * calculatePooledEstimates() - primary analysis function
+  * pooledDORAnalysis() - DOR subgroup analysis
+  * metaRegression() - meta-regression module
+  * bayesBivariatePool() - Bayesian analysis module
+  * iSquaredWithCI() - heterogeneity CI function
+
+- Impact: All heterogeneity estimates, I² values, and confidence intervals
+  can produce NaN/Infinity under homogeneous data conditions
+
+RECOMMENDATION: NOT READY FOR PUBLIC RELEASE
+Regressions needed in 5 locations with proper edge-case guards.

@@ -1,0 +1,47 @@
+{
+  "schema_version": "r_parity.v1",
+  "generated_at": "2026-03-07T00:00:00Z",
+  "description": "Common metadata envelope for DTA Pro validation artifacts. Existing payload fields remain method-specific; validation_metadata is additive and backward-compatible.",
+  "required_validation_metadata_fields": [
+    "artifactType",
+    "referencePackage",
+    "referenceVersion",
+    "sourceUrl",
+    "validationDate",
+    "validationStatus",
+    "toleranceAbs",
+    "toleranceRel"
+  ],
+  "optional_validation_metadata_fields": [
+    "referencePackageDetails",
+    "ownerFiles",
+    "notes"
+  ],
+  "allowed_status_values": [
+    "validated",
+    "partial",
+    "planned",
+    "experimental",
+    "workflow"
+  ],
+  "allowed_artifact_types": [
+    "deterministic_reference",
+    "simulation_reference",
+    "gap_fill_reference",
+    "comparison_report",
+    "validation_snapshot"
+  ],
+  "method_record_template": {
+    "referencePackage": "string or null",
+    "referenceVersion": "string or null",
+    "sourceUrl": "string or null",
+    "validationDate": "YYYY-MM-DD",
+    "validationStatus": "validated | partial | planned | experimental | workflow",
+    "toleranceAbs": {
+      "metric_name": "number"
+    },
+    "toleranceRel": {
+      "metric_name_or_default": "number"
+    }
+  }
+}

@@ -1,0 +1,719 @@
+{
+  "generated_at": "2026-03-04T11:02:23.179Z",
+  "dataset_path": "C:\\HTML apps\\DTA_Pro_Review\\R_validation\\gapfill_comparator_dataset.json",
+  "reference_path": "C:\\HTML apps\\DTA_Pro_Review\\R_validation\\gapfill_reference_r.json",
+  "tolerances": {
+    "absTol": 0.000002,
+    "relTol": 0.000001
+  },
+  "summary": {
+    "total_metrics": 57,
+    "failed_metrics": 0,
+    "pass": true,
+    "max_abs_diff": 1.0954147311448281e-11
+  },
+  "methods": {
+    "comparative_dta": {
+      "app": {
+        "pooled": {
+          "test1": {
+            "sens": 0.8434546308968601,
+            "spec": 0.8074255346909609
+          },
+          "test2": {
+            "sens": 0.7892653395410187,
+            "spec": 0.7518952354480537
+          }
+        },
+        "comparison": {
+          "sensitivity_difference": 0.054189291355841385,
+          "sensitivity_ci": [
+            0.040602210547056525,
+            0.06777637216462624
+          ],
+          "sensitivity_p_value": 4.440892098500626e-16,
+          "specificity_difference": 0.0555302992429072,
+          "specificity_ci": [
+            0.04511131647867633,
+            0.06594928200713807
+          ],
+          "specificity_p_value": 0,
+          "conclusion": "Test 1 has significantly HIGHER sensitivity. Test 1 has significantly HIGHER specificity"
+        }
+      },
+      "reference": {
+        "pooled": {
+          "test1": {
+            "sens": 0.8434546308968602,
+            "spec": 0.8074255346909609
+          },
+          "test2": {
+            "sens": 0.7892653395410187,
+            "spec": 0.7518952354480538
+          }
+        },
+        "comparison": {
+          "sensitivity_difference": 0.054189291355841496,
+          "sensitivity_ci": [
+            0.04060221055801067,
+            0.06777637215367233
+          ],
+          "sensitivity_p_value": 2.220446049250313e-16,
+          "specificity_difference": 0.05553029924290709,
+          "specificity_ci": [
+            0.04511131648707611,
+            0.06594928199873806
+          ],
+          "specificity_p_value": 0,
+          "conclusion": "Test 1 has significantly HIGHER sensitivity. Test 1 has significantly HIGHER specificity"
+        }
+      }
+    },
+    "threshold_optimization": {
+      "app": {
+        "youden": {
+          "sens": 0.8283891154495996,
+          "spec": 0.797113119074047,
+          "j": 0.6255022345236467
+        },
+        "closest_to_ideal": {
+          "sens": 0.8283891154495996,
+          "spec": 0.797113119074047,
+          "distance": 0.26573178610778325
+        },
+        "min_cost": {
+          "sens": 0.8283891154495996,
+          "spec": 0.797113119074047,
+          "expected_cost": 0.10986353375346736,
+          "prevalence": 0.12
+        },
+        "constrained_optimal": {
+          "sens": 0.8283891154495996,
+          "spec": 0.797113119074047,
+          "meets_constraints": false,
+          "target_sens": 0.85,
+          "target_spec": 0.8
+        },
+        "recommendation": []
+      },
+      "reference": {
+        "youden": {
+          "sens": 0.8283891154495996,
+          "spec": 0.797113119074047,
+          "j": 0.6255022345236467
+        },
+        "closest_to_ideal": {
+          "sens": 0.8283891154495996,
+          "spec": 0.797113119074047,
+          "distance": 0.26573178610778325
+        },
+        "min_cost": {
+          "sens": 0.8283891154495996,
+          "spec": 0.797113119074047,
+          "expected_cost": 0.10986353375346736,
+          "prevalence": 0.12
+        },
+        "constrained_optimal": {
+          "sens": 0.8283891154495996,
+          "spec": 0.797113119074047,
+          "meets_constraints": false,
+          "target_sens": 0.85,
+          "target_spec": 0.8
+        },
+        "recommendation": []
+      }
+    },
+    "network_meta_dta": {
+      "app": {
+        "n_tests": 3,
+        "relative_dors": [
+          {
+            "comparison": "PET vs MRI",
+            "r_dor": 2.1527379710673493,
+            "log_r_dor": 0.7667405068731955,
+            "favors": "PET"
+          },
+          {
+            "comparison": "PET vs CT",
+            "r_dor": 3.6718446939190446,
+            "log_r_dor": 1.3006941771794427,
+            "favors": "PET"
+          },
+          {
+            "comparison": "MRI vs CT",
+            "r_dor": 1.705662622794035,
+            "log_r_dor": 0.5339536703062471,
+            "favors": "MRI"
+          }
+        ],
+        "rankings": [
+          {
+            "test": "PET",
+            "dor": 64.66226946524273,
+            "rank": 1,
+            "sucra": 1
+          },
+          {
+            "test": "MRI",
+            "dor": 30.037222520482842,
+            "rank": 2,
+            "sucra": 0.5
+          },
+          {
+            "test": "CT",
+            "dor": 17.6102953298461,
+            "rank": 3,
+            "sucra": 0
+          }
+        ],
+        "best_test": "PET"
+      },
+      "reference": {
+        "n_tests": 3,
+        "relative_dors": [
+          {
+            "comparison": "PET vs MRI",
+            "r_dor": 2.1527379710673493,
+            "log_r_dor": 0.7667405068731955,
+            "favors": "PET"
+          },
+          {
+            "comparison": "PET vs CT",
+            "r_dor": 3.6718446939190446,
+            "log_r_dor": 1.3006941771794427,
+            "favors": "PET"
+          },
+          {
+            "comparison": "MRI vs CT",
+            "r_dor": 1.705662622794035,
+            "log_r_dor": 0.5339536703062471,
+            "favors": "MRI"
+          }
+        ],
+        "rankings": [
+          {
+            "test": "PET",
+            "dor": 64.66226946524273,
+            "rank": 1,
+            "sucra": 1
+          },
+          {
+            "test": "MRI",
+            "dor": 30.037222520482842,
+            "rank": 2,
+            "sucra": 0.5
+          },
+          {
+            "test": "CT",
+            "dor": 17.6102953298461,
+            "rank": 3,
+            "sucra": 0
+          }
+        ],
+        "best_test": "PET"
+      }
+    },
+    "ipd_two_stage": {
+      "app": {
+        "n_patients": 105,
+        "n_studies": 3,
+        "one_stage": {
+          "sensitivity": 0.8,
+          "specificity": 0.8
+        },
+        "two_stage": {
+          "sensitivity": 0.7915696651733644,
+          "specificity": 0.7967701271887494,
+          "dor": 14.889280582383716
+        },
+        "heterogeneity": {
+          "q_sens": 1.160338874732105,
+          "q_spec": 0.6158883471186427,
+          "i2_sens": 0,
+          "i2_spec": 0,
+          "p_q_sens": 0.5598035068993061,
+          "p_q_spec": 0.7349563468607547
+        }
+      },
+      "reference": {
+        "n_patients": 105,
+        "n_studies": 3,
+        "one_stage": {
+          "sensitivity": 0.8,
+          "specificity": 0.8
+        },
+        "two_stage": {
+          "sensitivity": 0.7915696651733644,
+          "specificity": 0.7967701271887494,
+          "dor": 14.889280582383716
+        },
+        "heterogeneity": {
+          "q_sens": 1.160338874732105,
+          "q_spec": 0.6158883471186426,
+          "i2_sens": 0,
+          "i2_spec": 0,
+          "p_q_sens": 0.5598035068975271,
+          "p_q_spec": 0.7349563468607101
+        }
+      }
+    }
+  },
+  "comparisons": [
+    {
+      "name": "comparative.test1.sens",
+      "app": 0.8434546308968601,
+      "reference": 0.8434546308968602,
+      "abs_diff": 1.1102230246251565e-16,
+      "rel_diff": 1.1102230246251565e-16,
+      "pass": true
+    },
+    {
+      "name": "comparative.test1.spec",
+      "app": 0.8074255346909609,
+      "reference": 0.8074255346909609,
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "comparative.test2.sens",
+      "app": 0.7892653395410187,
+      "reference": 0.7892653395410187,
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "comparative.test2.spec",
+      "app": 0.7518952354480537,
+      "reference": 0.7518952354480538,
+      "abs_diff": 1.1102230246251565e-16,
+      "rel_diff": 1.1102230246251565e-16,
+      "pass": true
+    },
+    {
+      "name": "comparative.rd_sens",
+      "app": 0.054189291355841385,
+      "reference": 0.054189291355841496,
+      "abs_diff": 1.1102230246251565e-16,
+      "rel_diff": 1.1102230246251565e-16,
+      "pass": true
+    },
+    {
+      "name": "comparative.rd_spec",
+      "app": 0.0555302992429072,
+      "reference": 0.05553029924290709,
+      "abs_diff": 1.1102230246251565e-16,
+      "rel_diff": 1.1102230246251565e-16,
+      "pass": true
+    },
+    {
+      "name": "comparative.rd_sens_ci1",
+      "app": 0.040602210547056525,
+      "reference": 0.04060221055801067,
+      "abs_diff": 1.0954147311448281e-11,
+      "rel_diff": 1.0954147311448281e-11,
+      "pass": true
+    },
+    {
+      "name": "comparative.rd_sens_ci2",
+      "app": 0.06777637216462624,
+      "reference": 0.06777637215367233,
+      "abs_diff": 1.0953918327949452e-11,
+      "rel_diff": 1.0953918327949452e-11,
+      "pass": true
+    },
+    {
+      "name": "comparative.rd_spec_ci1",
+      "app": 0.04511131647867633,
+      "reference": 0.04511131648707611,
+      "abs_diff": 8.399773931966337e-12,
+      "rel_diff": 8.399773931966337e-12,
+      "pass": true
+    },
+    {
+      "name": "comparative.rd_spec_ci2",
+      "app": 0.06594928200713807,
+      "reference": 0.06594928199873806,
+      "abs_diff": 8.400002915465166e-12,
+      "rel_diff": 8.400002915465166e-12,
+      "pass": true
+    },
+    {
+      "name": "comparative.p_sens",
+      "app": 4.440892098500626e-16,
+      "reference": 2.220446049250313e-16,
+      "abs_diff": 2.220446049250313e-16,
+      "rel_diff": 2.220446049250313e-16,
+      "pass": true
+    },
+    {
+      "name": "comparative.p_spec",
+      "app": 0,
+      "reference": 0,
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "comparative.conclusion",
+      "app": "Test 1 has significantly HIGHER sensitivity. Test 1 has significantly HIGHER specificity",
+      "reference": "Test 1 has significantly HIGHER sensitivity. Test 1 has significantly HIGHER specificity",
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "threshold.youden_j",
+      "app": 0.6255022345236467,
+      "reference": 0.6255022345236467,
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "threshold.distance",
+      "app": 0.26573178610778325,
+      "reference": 0.26573178610778325,
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "threshold.expected_cost",
+      "app": 0.10986353375346736,
+      "reference": 0.10986353375346736,
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "threshold.recommendation.length",
+      "app": 0,
+      "reference": 0,
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "threshold.meets_constraints",
+      "app": false,
+      "reference": false,
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "network.n_tests",
+      "app": 3,
+      "reference": 3,
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "network.best_test",
+      "app": "PET",
+      "reference": "PET",
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "network.rankings.length",
+      "app": 3,
+      "reference": 3,
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "network.rank[0].test",
+      "app": "PET",
+      "reference": "PET",
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "network.rank[0].dor",
+      "app": 64.66226946524273,
+      "reference": 64.66226946524273,
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "network.rank[0].rank",
+      "app": 1,
+      "reference": 1,
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "network.rank[0].sucra",
+      "app": 1,
+      "reference": 1,
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "network.rank[1].test",
+      "app": "MRI",
+      "reference": "MRI",
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "network.rank[1].dor",
+      "app": 30.037222520482842,
+      "reference": 30.037222520482842,
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "network.rank[1].rank",
+      "app": 2,
+      "reference": 2,
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "network.rank[1].sucra",
+      "app": 0.5,
+      "reference": 0.5,
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "network.rank[2].test",
+      "app": "CT",
+      "reference": "CT",
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "network.rank[2].dor",
+      "app": 17.6102953298461,
+      "reference": 17.6102953298461,
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "network.rank[2].rank",
+      "app": 3,
+      "reference": 3,
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "network.rank[2].sucra",
+      "app": 0,
+      "reference": 0,
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "network.relative_dors.length",
+      "app": 3,
+      "reference": 3,
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "network.pair[0].comparison",
+      "app": "PET vs MRI",
+      "reference": "PET vs MRI",
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "network.pair[0].r_dor",
+      "app": 2.1527379710673493,
+      "reference": 2.1527379710673493,
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "network.pair[0].log_r_dor",
+      "app": 0.7667405068731955,
+      "reference": 0.7667405068731955,
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "network.pair[0].favors",
+      "app": "PET",
+      "reference": "PET",
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "network.pair[1].comparison",
+      "app": "PET vs CT",
+      "reference": "PET vs CT",
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "network.pair[1].r_dor",
+      "app": 3.6718446939190446,
+      "reference": 3.6718446939190446,
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "network.pair[1].log_r_dor",
+      "app": 1.3006941771794427,
+      "reference": 1.3006941771794427,
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "network.pair[1].favors",
+      "app": "PET",
+      "reference": "PET",
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "network.pair[2].comparison",
+      "app": "MRI vs CT",
+      "reference": "MRI vs CT",
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "network.pair[2].r_dor",
+      "app": 1.705662622794035,
+      "reference": 1.705662622794035,
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "network.pair[2].log_r_dor",
+      "app": 0.5339536703062471,
+      "reference": 0.5339536703062471,
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "network.pair[2].favors",
+      "app": "MRI",
+      "reference": "MRI",
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "ipd.n_patients",
+      "app": 105,
+      "reference": 105,
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "ipd.n_studies",
+      "app": 3,
+      "reference": 3,
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "ipd.one_stage.sens",
+      "app": 0.8,
+      "reference": 0.8,
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "ipd.one_stage.spec",
+      "app": 0.8,
+      "reference": 0.8,
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "ipd.two_stage.sens",
+      "app": 0.7915696651733644,
+      "reference": 0.7915696651733644,
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "ipd.two_stage.spec",
+      "app": 0.7967701271887494,
+      "reference": 0.7967701271887494,
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "ipd.two_stage.dor",
+      "app": 14.889280582383716,
+      "reference": 14.889280582383716,
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "ipd.het.q_sens",
+      "app": 1.160338874732105,
+      "reference": 1.160338874732105,
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "ipd.het.q_spec",
+      "app": 0.6158883471186427,
+      "reference": 0.6158883471186426,
+      "abs_diff": 1.1102230246251565e-16,
+      "rel_diff": 1.1102230246251565e-16,
+      "pass": true
+    },
+    {
+      "name": "ipd.het.i2_sens",
+      "app": 0,
+      "reference": 0,
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    },
+    {
+      "name": "ipd.het.i2_spec",
+      "app": 0,
+      "reference": 0,
+      "abs_diff": 0,
+      "rel_diff": 0,
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+name: parity-and-benchmark
+
+on:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - "R_validation/**"
+      - "dta-pro-v3.7.html"
+      - ".github/workflows/parity-and-benchmark.yml"
+  pull_request:
+    paths:
+      - "R_validation/**"
+      - "dta-pro-v3.7.html"
+      - ".github/workflows/parity-and-benchmark.yml"
+  workflow_dispatch:
+
+jobs:
+  quality-gate:
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: pwsh
+        working-directory: R_validation
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: "release"
+          use-public-rspm: true
+
+      - name: Install R packages
+        run: |
+          Rscript -e "install.packages(c('jsonlite','mada'), repos='https://cloud.r-project.org')"
+
+      - name: Run quality gate
+        run: |
+          ./run_quality_gate.ps1 -Replicates 60 -Seed 20260304 -MinStudies 6 -MaxStudies 20
+
+      - name: Upload validation reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: dta-pro-validation-reports
+          path: |
+            R_validation/pubbias_reference_r.json
+            R_validation/pubbias_comparison_report.json
+            R_validation/gapfill_reference_r.json
+            R_validation/gapfill_comparison_report.json
+            R_validation/benchmark_sim_datasets.json
+            R_validation/benchmark_mada_reference_r.json
+            R_validation/benchmark_comparison_report.json
+

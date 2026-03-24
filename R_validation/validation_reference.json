@@ -1,0 +1,65 @@
+{
+  "schema_version": "r_parity.v1",
+  "validation_metadata": {
+    "artifactType": "validation_snapshot",
+    "referencePackage": "mada",
+    "referenceVersion": "0.5.12",
+    "sourceUrl": "https://cran.r-project.org/web/packages/mada/index.html",
+    "validationDate": "2026-03-07",
+    "validationStatus": "validated",
+    "toleranceAbs": {
+      "sensitivity": 0.01,
+      "specificity": 0.01,
+      "tau2": 0.025,
+      "rho": 0.025,
+      "plr": 0.25,
+      "nlr": 0.02,
+      "dor": 1.0,
+      "auc": 0.01,
+      "deeks_slope": 0.1,
+      "deeks_p_value": 0.05
+    },
+    "toleranceRel": {
+      "default": 0.02
+    },
+    "ownerFiles": [
+      "dta-pro-v3.7.html",
+      "R_validation/benchmark_mada_reference_r.R",
+      "R_validation/benchmark_compare.js"
+    ],
+    "notes": "Legacy payload preserved; validation metadata added for Phase 0 parity governance."
+  },
+  "dataset": "Dementia (mada package fallback)",
+  "n_studies": 33,
+  "bivariate_glmm": {
+    "sensitivity": 0.7887,
+    "sensitivity_ci": [0.7355, 0.8337],
+    "specificity": 0.8862,
+    "specificity_ci": [0.8477, 0.9159],
+    "tau2_sens": 0.6399,
+    "tau2_spec": 0.8772,
+    "rho": 0.5779
+  },
+  "heterogeneity": {
+    "Q_sens": 384.19,
+    "I2_sens": 91.7,
+    "Q_spec": 825.42,
+    "I2_spec": 96.1
+  },
+  "likelihood_ratios": {
+    "PLR": 6.93,
+    "NLR": 0.238,
+    "DOR": 29.1
+  },
+  "hsroc": {
+    "Lambda": 3.5174,
+    "Theta": -0.7272,
+    "sigma2_alpha": 0.6636,
+    "sigma2_theta": 1.2551
+  },
+  "auc": 0.9232,
+  "deeks_test": {
+    "slope": 2.8289,
+    "p_value": 0.7571
+  }
+}

@@ -1,0 +1,1969 @@
+{
+  "generated_at": "2026-03-04T11:02:21.455Z",
+  "dataset_path": "C:\\HTML apps\\DTA_Pro_Review\\R_validation\\pubbias_comparator_dataset.csv",
+  "reference_path": "C:\\HTML apps\\DTA_Pro_Review\\R_validation\\pubbias_reference_r.json",
+  "tolerances": {
+    "absTol": 0.000002,
+    "relTol": 0.000001
+  },
+  "summary": {
+    "total_metrics": 169,
+    "failed_metrics": 0,
+    "pass": true,
+    "max_abs_diff": 0.0000016452954317847102
+  },
+  "methods": {
+    "pet_peese": {
+      "app": {
+        "pet": {
+          "intercept": 3.0616944376734128,
+          "slope": 2.00176125249864,
+          "intercept_se": 1.2978454430231423,
+          "slope_se": 2.51502327746723,
+          "df": 8,
+          "p_intercept": 0.04602575371295625,
+          "p_slope": 0.4490480757283888
+        },
+        "peese": {
+          "intercept": 3.629559709462354,
+          "slope": 1.6823067341622886,
+          "intercept_se": 0.6581976485734727,
+          "slope_se": 2.3062415786513037,
+          "df": 8,
+          "p_intercept": 0.000564094044782415
+        },
+        "decision": {
+          "use_peese": true,
+          "corrected_log_dor": 3.629559709462354,
+          "corrected_dor": 37.69621567576412,
+          "unadjusted_log_dor": 4.077548470343578,
+          "unadjusted_dor": 59.00065056342032,
+          "change_pct": -36.108813520210035
+        }
+      },
+      "reference": {
+        "pet": {
+          "intercept": 3.0616944376734314,
+          "slope": 2.001761252498603,
+          "intercept_se": 1.2978454430231423,
+          "slope_se": 2.5150232774672303,
+          "df": 8,
+          "p_intercept": 0.04602575371314895,
+          "p_slope": 0.44904807572837446
+        },
+        "peese": {
+          "intercept": 3.629559709462354,
+          "slope": 1.6823067341622886,
+          "intercept_se": 0.6581976485734727,
+          "slope_se": 2.3062415786513037,
+          "df": 8,
+          "p_intercept": 0.0005640940447825522
+        },
+        "decision": {
+          "use_peese": true,
+          "corrected_log_dor": 3.629559709462354,
+          "corrected_dor": 37.69621567576412,
+          "unadjusted_log_dor": 4.077548470343578,
+          "unadjusted_dor": 59.00065056342032,
+          "change_pct": -36.108813520210035
+        }
+      },
+      "comparisons": [
+        {
+          "name": "pet.intercept",
+          "app": 3.0616944376734128,
+          "reference": 3.0616944376734314,
+          "abs_diff": 1.865174681370263e-14,
+          "rel_diff": 6.091968742601242e-15,
+          "pass": true
+        },
+        {
+          "name": "pet.slope",
+          "app": 2.00176125249864,
+          "reference": 2.001761252498603,
+          "abs_diff": 3.68594044175552e-14,
+          "rel_diff": 1.841348680895213e-14,
+          "pass": true
+        },
+        {
+          "name": "pet.intercept_se",
+          "app": 1.2978454430231423,
+          "reference": 1.2978454430231423,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "pet.slope_se",
+          "app": 2.51502327746723,
+          "reference": 2.5150232774672303,
+          "abs_diff": 4.440892098500626e-16,
+          "rel_diff": 1.7657459230249567e-16,
+          "pass": true
+        },
+        {
+          "name": "pet.df",
+          "app": 8,
+          "reference": 8,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "pet.p_intercept",
+          "app": 0.04602575371295625,
+          "reference": 0.04602575371314895,
+          "abs_diff": 1.9270002260540764e-13,
+          "rel_diff": 1.9270002260540764e-13,
+          "pass": true
+        },
+        {
+          "name": "pet.p_slope",
+          "app": 0.4490480757283888,
+          "reference": 0.44904807572837446,
+          "abs_diff": 1.432187701766452e-14,
+          "rel_diff": 1.432187701766452e-14,
+          "pass": true
+        },
+        {
+          "name": "peese.intercept",
+          "app": 3.629559709462354,
+          "reference": 3.629559709462354,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "peese.slope",
+          "app": 1.6823067341622886,
+          "reference": 1.6823067341622886,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "peese.intercept_se",
+          "app": 0.6581976485734727,
+          "reference": 0.6581976485734727,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "peese.slope_se",
+          "app": 2.3062415786513037,
+          "reference": 2.3062415786513037,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "peese.df",
+          "app": 8,
+          "reference": 8,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "peese.p_intercept",
+          "app": 0.000564094044782415,
+          "reference": 0.0005640940447825522,
+          "abs_diff": 1.3725999503666486e-16,
+          "rel_diff": 1.3725999503666486e-16,
+          "pass": true
+        },
+        {
+          "name": "decision.use_peese",
+          "app": true,
+          "reference": true,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "decision.corrected_log_dor",
+          "app": 3.629559709462354,
+          "reference": 3.629559709462354,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "decision.corrected_dor",
+          "app": 37.69621567576412,
+          "reference": 37.69621567576412,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "decision.unadjusted_log_dor",
+          "app": 4.077548470343578,
+          "reference": 4.077548470343578,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "decision.unadjusted_dor",
+          "app": 59.00065056342032,
+          "reference": 59.00065056342032,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "decision.change_pct",
+          "app": -36.108813520210035,
+          "reference": -36.108813520210035,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        }
+      ]
+    },
+    "excess_significance": {
+      "app": {
+        "alpha": 0.05,
+        "z_crit": 1.959963986120195,
+        "observed_sig": 10,
+        "k": 10,
+        "theta_fe": 4.077548470343578,
+        "theta_re": 4.113498855464026,
+        "tau2_dl": 0.26900284652020995,
+        "stats_fe": {
+          "expected_sig": 9.999868946681316,
+          "chi2": 0.00013105503620398023,
+          "p_excess": 0.9908660751760598,
+          "p_exact": 0.9998689505267221,
+          "ratio": 1.0000131055036203
+        },
+        "stats_re": {
+          "expected_sig": 9.99220519486664,
+          "chi2": 0.007800885771805499,
+          "p_excess": 0.9296202584927226,
+          "p_exact": 0.9922261543436659,
+          "ratio": 1.0007800885771805
+        },
+        "primary": {
+          "expected_sig": 9.99220519486664,
+          "chi2": 0.007800885771805499,
+          "p_excess": 0.9296202584927226,
+          "p_exact": 0.9922261543436659,
+          "ratio": 1.0007800885771805
+        },
+        "primary_label": "Random-effects (primary)"
+      },
+      "reference": {
+        "alpha": 0.05,
+        "z_crit": 1.9599639845400536,
+        "observed_sig": 10,
+        "k": 10,
+        "theta_fe": 4.077548470343578,
+        "theta_re": 4.113498855464024,
+        "tau2_dl": 0.2690028465202099,
+        "stats_fe": {
+          "expected_sig": 9.99986899162596,
+          "chi2": 0.00013101009038256773,
+          "p_excess": 0.9908676414990315,
+          "p_exact": 0.9998689954684746,
+          "ratio": 1.0000131010090383
+        },
+        "stats_re": {
+          "expected_sig": 9.992205559971238,
+          "chi2": 0.0078005200973716065,
+          "p_excess": 0.9296219037881543,
+          "p_exact": 0.9922265170432129,
+          "ratio": 1.0007800520097372
+        },
+        "primary": {
+          "expected_sig": 9.992205559971238,
+          "chi2": 0.0078005200973716065,
+          "p_excess": 0.9296219037881543,
+          "p_exact": 0.9922265170432129,
+          "ratio": 1.0007800520097372
+        },
+        "primary_label": "Random-effects (primary)"
+      },
+      "comparisons": [
+        {
+          "name": "alpha",
+          "app": 0.05,
+          "reference": 0.05,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "z_crit",
+          "app": 1.959963986120195,
+          "reference": 1.9599639845400536,
+          "abs_diff": 1.5801413510985185e-9,
+          "rel_diff": 8.062093805235951e-10,
+          "pass": true
+        },
+        {
+          "name": "observed_sig",
+          "app": 10,
+          "reference": 10,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "k",
+          "app": 10,
+          "reference": 10,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "theta_fe",
+          "app": 4.077548470343578,
+          "reference": 4.077548470343578,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "theta_re",
+          "app": 4.113498855464026,
+          "reference": 4.113498855464024,
+          "abs_diff": 1.7763568394002505e-15,
+          "rel_diff": 4.318359872741152e-16,
+          "pass": true
+        },
+        {
+          "name": "tau2_dl",
+          "app": 0.26900284652020995,
+          "reference": 0.2690028465202099,
+          "abs_diff": 5.551115123125783e-17,
+          "rel_diff": 5.551115123125783e-17,
+          "pass": true
+        },
+        {
+          "name": "stats_fe.expected_sig",
+          "app": 9.999868946681316,
+          "reference": 9.99986899162596,
+          "abs_diff": 4.4944643562416786e-8,
+          "rel_diff": 4.4945232382598315e-9,
+          "pass": true
+        },
+        {
+          "name": "stats_fe.chi2",
+          "app": 0.00013105503620398023,
+          "reference": 0.00013101009038256773,
+          "abs_diff": 4.494582141249771e-8,
+          "rel_diff": 4.494582141249771e-8,
+          "pass": true
+        },
+        {
+          "name": "stats_fe.p_excess",
+          "app": 0.9908660751760598,
+          "reference": 0.9908676414990315,
+          "abs_diff": 0.0000015663229716578186,
+          "rel_diff": 0.0000015663229716578186,
+          "pass": true
+        },
+        {
+          "name": "stats_fe.p_exact",
+          "app": 0.9998689505267221,
+          "reference": 0.9998689954684746,
+          "abs_diff": 4.494175254166066e-8,
+          "rel_diff": 4.494175254166066e-8,
+          "pass": true
+        },
+        {
+          "name": "stats_fe.ratio",
+          "app": 1.0000131055036203,
+          "reference": 1.0000131010090383,
+          "abs_diff": 4.494582039882289e-9,
+          "rel_diff": 4.494523136893047e-9,
+          "pass": true
+        },
+        {
+          "name": "stats_re.expected_sig",
+          "app": 9.99220519486664,
+          "reference": 9.992205559971238,
+          "abs_diff": 3.6510459722194355e-7,
+          "rel_diff": 3.6538939779677083e-8,
+          "pass": true
+        },
+        {
+          "name": "stats_re.chi2",
+          "app": 0.007800885771805499,
+          "reference": 0.0078005200973716065,
+          "abs_diff": 3.656744338928486e-7,
+          "rel_diff": 3.656744338928486e-7,
+          "pass": true
+        },
+        {
+          "name": "stats_re.p_excess",
+          "app": 0.9296202584927226,
+          "reference": 0.9296219037881543,
+          "abs_diff": 0.0000016452954317847102,
+          "rel_diff": 0.0000016452954317847102,
+          "pass": true
+        },
+        {
+          "name": "stats_re.p_exact",
+          "app": 0.9922261543436659,
+          "reference": 0.9922265170432129,
+          "abs_diff": 3.6269954695189455e-7,
+          "rel_diff": 3.6269954695189455e-7,
+          "pass": true
+        },
+        {
+          "name": "stats_re.ratio",
+          "app": 1.0007800885771805,
+          "reference": 1.0007800520097372,
+          "abs_diff": 3.656744329560979e-8,
+          "rel_diff": 3.653893968613835e-8,
+          "pass": true
+        },
+        {
+          "name": "primary.expected_sig",
+          "app": 9.99220519486664,
+          "reference": 9.992205559971238,
+          "abs_diff": 3.6510459722194355e-7,
+          "rel_diff": 3.6538939779677083e-8,
+          "pass": true
+        },
+        {
+          "name": "primary.chi2",
+          "app": 0.007800885771805499,
+          "reference": 0.0078005200973716065,
+          "abs_diff": 3.656744338928486e-7,
+          "rel_diff": 3.656744338928486e-7,
+          "pass": true
+        },
+        {
+          "name": "primary.p_excess",
+          "app": 0.9296202584927226,
+          "reference": 0.9296219037881543,
+          "abs_diff": 0.0000016452954317847102,
+          "rel_diff": 0.0000016452954317847102,
+          "pass": true
+        },
+        {
+          "name": "primary.p_exact",
+          "app": 0.9922261543436659,
+          "reference": 0.9922265170432129,
+          "abs_diff": 3.6269954695189455e-7,
+          "rel_diff": 3.6269954695189455e-7,
+          "pass": true
+        },
+        {
+          "name": "primary.ratio",
+          "app": 1.0007800885771805,
+          "reference": 1.0007800520097372,
+          "abs_diff": 3.656744329560979e-8,
+          "rel_diff": 3.653893968613835e-8,
+          "pass": true
+        },
+        {
+          "name": "primary_label",
+          "app": "Random-effects (primary)",
+          "reference": "Random-effects (primary)",
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        }
+      ]
+    },
+    "deeks": {
+      "app": {
+        "intercept": 4.826008779528043,
+        "slope": -7.956646482486553,
+        "se_slope": 12.185362546386292,
+        "t": -0.6529675626964573,
+        "p_value": 0.5320894780546799,
+        "n": 10
+      },
+      "reference": {
+        "intercept": 4.826008779528042,
+        "slope": -7.95664648248655,
+        "se_slope": 12.185362546386298,
+        "t": -0.6529675626964567,
+        "p_value": 0.532089478054661,
+        "n": 10
+      },
+      "comparisons": [
+        {
+          "name": "deeks.intercept",
+          "app": 4.826008779528043,
+          "reference": 4.826008779528042,
+          "abs_diff": 8.881784197001252e-16,
+          "rel_diff": 1.8403995108085655e-16,
+          "pass": true
+        },
+        {
+          "name": "deeks.slope",
+          "app": -7.956646482486553,
+          "reference": -7.95664648248655,
+          "abs_diff": 2.6645352591003757e-15,
+          "rel_diff": 3.3488169481518485e-16,
+          "pass": true
+        },
+        {
+          "name": "deeks.se_slope",
+          "app": 12.185362546386292,
+          "reference": 12.185362546386298,
+          "abs_diff": 5.329070518200751e-15,
+          "rel_diff": 4.373337681102599e-16,
+          "pass": true
+        },
+        {
+          "name": "deeks.t",
+          "app": -0.6529675626964573,
+          "reference": -0.6529675626964567,
+          "abs_diff": 5.551115123125783e-16,
+          "rel_diff": 5.551115123125783e-16,
+          "pass": true
+        },
+        {
+          "name": "deeks.p_value",
+          "app": 0.5320894780546799,
+          "reference": 0.532089478054661,
+          "abs_diff": 1.887379141862766e-14,
+          "rel_diff": 1.887379141862766e-14,
+          "pass": true
+        },
+        {
+          "name": "deeks.n",
+          "app": 10,
+          "reference": 10,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        }
+      ]
+    },
+    "egger_variants": {
+      "app": {
+        "standard_egger": {
+          "coefficient": 2.001761252498639,
+          "se": 2.5150232774672316,
+          "t": 0.7959215608193193,
+          "p": 0.44904807572838923
+        },
+        "deeks_funnel_asymmetry": {
+          "coefficient": -7.95664648248654,
+          "se": 12.185362546386283,
+          "t": -0.6529675626964566,
+          "p": 0.5320894780546799
+        },
+        "peters_test": {
+          "coefficient": -32.80411275179799,
+          "se": 91.16548168986688,
+          "t": -0.35983041106932684,
+          "p": 0.7282879873031951
+        }
+      },
+      "reference": {
+        "standard_egger": {
+          "coefficient": 2.001761252498556,
+          "se": 2.5150232774672534,
+          "t": 0.7959215608192794,
+          "p": 0.4490480757283887
+        },
+        "deeks_funnel_asymmetry": {
+          "coefficient": -7.95664648248654,
+          "se": 12.185362546386285,
+          "t": -0.6529675626964565,
+          "p": 0.5320894780546611
+        },
+        "peters_test": {
+          "coefficient": -32.80411275179703,
+          "se": 91.16548168986675,
+          "t": -0.3598304110693168,
+          "p": 0.7282879873031904
+        }
+      },
+      "comparisons": [
+        {
+          "name": "standard_egger.coefficient",
+          "app": 2.001761252498639,
+          "reference": 2.001761252498556,
+          "abs_diff": 8.304468224196171e-14,
+          "rel_diff": 4.148580762980783e-14,
+          "pass": true
+        },
+        {
+          "name": "standard_egger.se",
+          "app": 2.5150232774672316,
+          "reference": 2.5150232774672534,
+          "abs_diff": 2.1760371282653068e-14,
+          "rel_diff": 8.652155022822208e-15,
+          "pass": true
+        },
+        {
+          "name": "standard_egger.t",
+          "app": 0.7959215608193193,
+          "reference": 0.7959215608192794,
+          "abs_diff": 3.985700658404312e-14,
+          "rel_diff": 3.985700658404312e-14,
+          "pass": true
+        },
+        {
+          "name": "standard_egger.p",
+          "app": 0.44904807572838923,
+          "reference": 0.4490480757283887,
+          "abs_diff": 5.551115123125783e-16,
+          "rel_diff": 5.551115123125783e-16,
+          "pass": true
+        },
+        {
+          "name": "deeks_funnel_asymmetry.coefficient",
+          "app": -7.95664648248654,
+          "reference": -7.95664648248654,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "deeks_funnel_asymmetry.se",
+          "app": 12.185362546386283,
+          "reference": 12.185362546386285,
+          "abs_diff": 1.7763568394002505e-15,
+          "rel_diff": 1.4577792270342011e-16,
+          "pass": true
+        },
+        {
+          "name": "deeks_funnel_asymmetry.t",
+          "app": -0.6529675626964566,
+          "reference": -0.6529675626964565,
+          "abs_diff": 1.1102230246251565e-16,
+          "rel_diff": 1.1102230246251565e-16,
+          "pass": true
+        },
+        {
+          "name": "deeks_funnel_asymmetry.p",
+          "app": 0.5320894780546799,
+          "reference": 0.5320894780546611,
+          "abs_diff": 1.8762769116165146e-14,
+          "rel_diff": 1.8762769116165146e-14,
+          "pass": true
+        },
+        {
+          "name": "peters_test.coefficient",
+          "app": -32.80411275179799,
+          "reference": -32.80411275179703,
+          "abs_diff": 9.592326932761353e-13,
+          "rel_diff": 2.924123266292456e-14,
+          "pass": true
+        },
+        {
+          "name": "peters_test.se",
+          "app": 91.16548168986688,
+          "reference": 91.16548168986675,
+          "abs_diff": 1.2789769243681803e-13,
+          "rel_diff": 1.4029179692365293e-15,
+          "pass": true
+        },
+        {
+          "name": "peters_test.t",
+          "app": -0.35983041106932684,
+          "reference": -0.3598304110693168,
+          "abs_diff": 1.0047518372857667e-14,
+          "rel_diff": 1.0047518372857667e-14,
+          "pass": true
+        },
+        {
+          "name": "peters_test.p",
+          "app": 0.7282879873031951,
+          "reference": 0.7282879873031904,
+          "abs_diff": 4.6629367034256575e-15,
+          "rel_diff": 4.6629367034256575e-15,
+          "pass": true
+        }
+      ]
+    },
+    "trim_and_fill": {
+      "app": {
+        "k_imputed": 0,
+        "median_log_dor": 4.253482783560398,
+        "original_log_dor": 4.077548470343578,
+        "adjusted_log_dor": 4.077548470343578,
+        "original_dor": 59.00065056342032,
+        "adjusted_dor": 59.00065056342032
+      },
+      "reference": {
+        "k_imputed": 0,
+        "median_log_dor": 4.253482783560398,
+        "original_log_dor": 4.077548470343578,
+        "adjusted_log_dor": 4.077548470343578,
+        "original_dor": 59.00065056342032,
+        "adjusted_dor": 59.00065056342032
+      },
+      "comparisons": [
+        {
+          "name": "k_imputed",
+          "app": 0,
+          "reference": 0,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "median_log_dor",
+          "app": 4.253482783560398,
+          "reference": 4.253482783560398,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "original_log_dor",
+          "app": 4.077548470343578,
+          "reference": 4.077548470343578,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "adjusted_log_dor",
+          "app": 4.077548470343578,
+          "reference": 4.077548470343578,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "original_dor",
+          "app": 59.00065056342032,
+          "reference": 59.00065056342032,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "adjusted_dor",
+          "app": 59.00065056342032,
+          "reference": 59.00065056342032,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        }
+      ]
+    },
+    "pcurve": {
+      "app": {
+        "n_significant": 10,
+        "low_p": 10,
+        "high_p": 0,
+        "right_skew": true,
+        "bins": {
+          "0.00-0.01": 10,
+          "0.01-0.02": 0,
+          "0.02-0.03": 0,
+          "0.03-0.04": 0,
+          "0.04-0.05": 0
+        }
+      },
+      "reference": {
+        "n_significant": 10,
+        "low_p": 10,
+        "high_p": 0,
+        "right_skew": true,
+        "bins": {
+          "0.00-0.01": 10,
+          "0.01-0.02": 0,
+          "0.02-0.03": 0,
+          "0.03-0.04": 0,
+          "0.04-0.05": 0
+        }
+      },
+      "comparisons": [
+        {
+          "name": "n_significant",
+          "app": 10,
+          "reference": 10,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "low_p",
+          "app": 10,
+          "reference": 10,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "high_p",
+          "app": 0,
+          "reference": 0,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "right_skew",
+          "app": true,
+          "reference": true,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "bins.0.00-0.01",
+          "app": 10,
+          "reference": 10,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "bins.0.01-0.02",
+          "app": 0,
+          "reference": 0,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "bins.0.02-0.03",
+          "app": 0,
+          "reference": 0,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "bins.0.03-0.04",
+          "app": 0,
+          "reference": 0,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "bins.0.04-0.05",
+          "app": 0,
+          "reference": 0,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        }
+      ]
+    },
+    "worst_case_selection_bounds": {
+      "app": {
+        "global_lower": 3.847022316932974,
+        "global_upper": 4.26301205681679,
+        "global_lower_dor": 46.85334091056006,
+        "global_upper_dor": 71.0235886816833,
+        "spread_dor": 24.170247771123236,
+        "robustness": "Low robustness",
+        "precision": {
+          "lower": 4.077548470343577,
+          "upper": 4.26301205681679,
+          "lower_cfg": {
+            "p_min": 0.2,
+            "cutoff": -1
+          },
+          "upper_cfg": {
+            "p_min": 0.2,
+            "cutoff": 8
+          }
+        },
+        "significance": {
+          "lower": 3.847022316932974,
+          "upper": 4.197633435658114,
+          "lower_cfg": {
+            "p_min": 0.2,
+            "cutoff": 6
+          },
+          "upper_cfg": {
+            "p_min": 0.2,
+            "cutoff": 2
+          }
+        },
+        "composite": {
+          "lower": 3.9304520021030878,
+          "upper": 4.197633435658114,
+          "lower_cfg": {
+            "p_min": 0.2,
+            "cutoff": 8
+          },
+          "upper_cfg": {
+            "p_min": 0.2,
+            "cutoff": 2
+          }
+        }
+      },
+      "reference": {
+        "global_lower": 3.8470223169329736,
+        "global_upper": 4.26301205681679,
+        "global_lower_dor": 46.853340910560036,
+        "global_upper_dor": 71.0235886816833,
+        "spread_dor": 24.170247771123258,
+        "robustness": "Low robustness",
+        "precision": {
+          "lower": 4.077548470343577,
+          "upper": 4.26301205681679,
+          "lower_cfg": {
+            "p_min": 0.3,
+            "cutoff": 9
+          },
+          "upper_cfg": {
+            "p_min": 0.2,
+            "cutoff": 8
+          }
+        },
+        "significance": {
+          "lower": 3.8470223169329736,
+          "upper": 4.197633435658114,
+          "lower_cfg": {
+            "p_min": 0.2,
+            "cutoff": 6
+          },
+          "upper_cfg": {
+            "p_min": 0.2,
+            "cutoff": 2
+          }
+        },
+        "composite": {
+          "lower": 3.9304520021030878,
+          "upper": 4.197633435658114,
+          "lower_cfg": {
+            "p_min": 0.2,
+            "cutoff": 8
+          },
+          "upper_cfg": {
+            "p_min": 0.2,
+            "cutoff": 2
+          }
+        }
+      },
+      "comparisons": [
+        {
+          "name": "global_lower",
+          "app": 3.847022316932974,
+          "reference": 3.8470223169329736,
+          "abs_diff": 4.440892098500626e-16,
+          "rel_diff": 1.1543712858003675e-16,
+          "pass": true
+        },
+        {
+          "name": "global_upper",
+          "app": 4.26301205681679,
+          "reference": 4.26301205681679,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "global_lower_dor",
+          "app": 46.85334091056006,
+          "reference": 46.853340910560036,
+          "abs_diff": 2.1316282072803006e-14,
+          "rel_diff": 4.54957568842196e-16,
+          "pass": true
+        },
+        {
+          "name": "global_upper_dor",
+          "app": 71.0235886816833,
+          "reference": 71.0235886816833,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "spread_dor",
+          "app": 24.170247771123236,
+          "reference": 24.170247771123258,
+          "abs_diff": 2.1316282072803006e-14,
+          "rel_diff": 8.819223648286324e-16,
+          "pass": true
+        },
+        {
+          "name": "robustness",
+          "app": "Low robustness",
+          "reference": "Low robustness",
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "precision.lower",
+          "app": 4.077548470343577,
+          "reference": 4.077548470343577,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "precision.upper",
+          "app": 4.26301205681679,
+          "reference": 4.26301205681679,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "significance.lower",
+          "app": 3.847022316932974,
+          "reference": 3.8470223169329736,
+          "abs_diff": 4.440892098500626e-16,
+          "rel_diff": 1.1543712858003675e-16,
+          "pass": true
+        },
+        {
+          "name": "significance.upper",
+          "app": 4.197633435658114,
+          "reference": 4.197633435658114,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "composite.lower",
+          "app": 3.9304520021030878,
+          "reference": 3.9304520021030878,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "composite.upper",
+          "app": 4.197633435658114,
+          "reference": 4.197633435658114,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        }
+      ]
+    },
+    "caliper_discontinuity": {
+      "app": {
+        "alpha": 0.05,
+        "width": 0.01,
+        "left": 0,
+        "right": 0,
+        "n_window": 0,
+        "too_few_window": true
+      },
+      "reference": {
+        "alpha": 0.05,
+        "width": 0.01,
+        "left": 0,
+        "right": 0,
+        "n_window": 0,
+        "too_few_window": true
+      },
+      "comparisons": [
+        {
+          "name": "alpha",
+          "app": 0.05,
+          "reference": 0.05,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "width",
+          "app": 0.01,
+          "reference": 0.01,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "left",
+          "app": 0,
+          "reference": 0,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "right",
+          "app": 0,
+          "reference": 0,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "n_window",
+          "app": 0,
+          "reference": 0,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "too_few_window",
+          "app": true,
+          "reference": true,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        }
+      ]
+    },
+    "selection_ratio_sensitivity": {
+      "app": {
+        "alpha": 0.05,
+        "n_sig": 10,
+        "n_non_sig": 0,
+        "unadjusted_log_dor": 4.077548470343578,
+        "unadjusted_dor": 59.00065056342032,
+        "eta_20pct": null,
+        "eta_null": null,
+        "max_attenuation": 8.881784197001252e-16,
+        "robustness": "High robustness",
+        "rows": [
+          {
+            "eta": 1,
+            "theta": 4.077548470343578,
+            "dor": 59.00065056342032,
+            "dor_ci": [
+              42.84998656070471,
+              81.23868981791306
+            ],
+            "ratio_to_unadjusted": 1
+          },
+          {
+            "eta": 1.25,
+            "theta": 4.077548470343578,
+            "dor": 59.00065056342032,
+            "dor_ci": [
+              41.26245348752235,
+              84.36427000055872
+            ],
+            "ratio_to_unadjusted": 1
+          },
+          {
+            "eta": 1.5,
+            "theta": 4.077548470343578,
+            "dor": 59.00065056342032,
+            "dor_ci": [
+              39.87789762922283,
+              87.29338741157382
+            ],
+            "ratio_to_unadjusted": 1
+          },
+          {
+            "eta": 2,
+            "theta": 4.077548470343578,
+            "dor": 59.00065056342032,
+            "dor_ci": [
+              37.533053275331405,
+              92.74696469191247
+            ],
+            "ratio_to_unadjusted": 1
+          },
+          {
+            "eta": 3,
+            "theta": 4.077548470343578,
+            "dor": 59.00065056342032,
+            "dor_ci": [
+              33.905047708399344,
+              102.67134253418139
+            ],
+            "ratio_to_unadjusted": 1
+          },
+          {
+            "eta": 4,
+            "theta": 4.077548470343578,
+            "dor": 59.00065056342032,
+            "dor_ci": [
+              31.120357669258407,
+              111.85850766572449
+            ],
+            "ratio_to_unadjusted": 1
+          },
+          {
+            "eta": 5,
+            "theta": 4.077548470343578,
+            "dor": 59.00065056342032,
+            "dor_ci": [
+              28.85714058321808,
+              120.63138261631013
+            ],
+            "ratio_to_unadjusted": 1
+          },
+          {
+            "eta": 7,
+            "theta": 4.077548470343577,
+            "dor": 59.00065056342027,
+            "dor_ci": [
+              25.313125765711,
+              137.5206206900875
+            ],
+            "ratio_to_unadjusted": 0.9999999999999991
+          },
+          {
+            "eta": 10,
+            "theta": 4.077548470343578,
+            "dor": 59.00065056342032,
+            "dor_ci": [
+              21.458388846400894,
+              162.22451703267996
+            ],
+            "ratio_to_unadjusted": 1
+          },
+          {
+            "eta": 15,
+            "theta": 4.077548470343577,
+            "dor": 59.00065056342027,
+            "dor_ci": [
+              17.095261500039868,
+              203.62816719116617
+            ],
+            "ratio_to_unadjusted": 0.9999999999999991
+          },
+          {
+            "eta": 20,
+            "theta": 4.077548470343578,
+            "dor": 59.00065056342032,
+            "dor_ci": [
+              14.113989501598766,
+              246.64016977712154
+            ],
+            "ratio_to_unadjusted": 1
+          }
+        ]
+      },
+      "reference": {
+        "alpha": 0.05,
+        "n_sig": 10,
+        "n_non_sig": 0,
+        "unadjusted_log_dor": 4.077548470343578,
+        "unadjusted_dor": 59.00065056342032,
+        "eta_20pct": null,
+        "eta_null": null,
+        "max_attenuation": 8.881784197001252e-16,
+        "robustness": "High robustness",
+        "rows": [
+          {
+            "eta": 1,
+            "theta": 4.077548470343578,
+            "dor": 59.00065056342032,
+            "dor_ci": [
+              42.84998656070471,
+              81.23868981791306
+            ],
+            "ratio_to_unadjusted": 1
+          },
+          {
+            "eta": 1.25,
+            "theta": 4.077548470343578,
+            "dor": 59.00065056342032,
+            "dor_ci": [
+              41.26245348752235,
+              84.36427000055872
+            ],
+            "ratio_to_unadjusted": 1
+          },
+          {
+            "eta": 1.5,
+            "theta": 4.077548470343577,
+            "dor": 59.00065056342027,
+            "dor_ci": [
+              39.877897629222794,
+              87.29338741157375
+            ],
+            "ratio_to_unadjusted": 0.9999999999999991
+          },
+          {
+            "eta": 2,
+            "theta": 4.077548470343578,
+            "dor": 59.00065056342032,
+            "dor_ci": [
+              37.533053275331405,
+              92.74696469191245
+            ],
+            "ratio_to_unadjusted": 1
+          },
+          {
+            "eta": 3,
+            "theta": 4.077548470343577,
+            "dor": 59.00065056342027,
+            "dor_ci": [
+              33.905047708399316,
+              102.67134253418129
+            ],
+            "ratio_to_unadjusted": 0.9999999999999991
+          },
+          {
+            "eta": 4,
+            "theta": 4.077548470343578,
+            "dor": 59.00065056342032,
+            "dor_ci": [
+              31.120357669258407,
+              111.85850766572449
+            ],
+            "ratio_to_unadjusted": 1
+          },
+          {
+            "eta": 5,
+            "theta": 4.077548470343578,
+            "dor": 59.00065056342032,
+            "dor_ci": [
+              28.85714058321808,
+              120.63138261631013
+            ],
+            "ratio_to_unadjusted": 1
+          },
+          {
+            "eta": 7,
+            "theta": 4.077548470343577,
+            "dor": 59.00065056342027,
+            "dor_ci": [
+              25.313125765711,
+              137.5206206900875
+            ],
+            "ratio_to_unadjusted": 0.9999999999999991
+          },
+          {
+            "eta": 10,
+            "theta": 4.077548470343578,
+            "dor": 59.00065056342032,
+            "dor_ci": [
+              21.45838884640089,
+              162.22451703267996
+            ],
+            "ratio_to_unadjusted": 1
+          },
+          {
+            "eta": 15,
+            "theta": 4.077548470343577,
+            "dor": 59.00065056342027,
+            "dor_ci": [
+              17.095261500039868,
+              203.62816719116617
+            ],
+            "ratio_to_unadjusted": 0.9999999999999991
+          },
+          {
+            "eta": 20,
+            "theta": 4.077548470343578,
+            "dor": 59.00065056342032,
+            "dor_ci": [
+              14.113989501598766,
+              246.64016977712154
+            ],
+            "ratio_to_unadjusted": 1
+          }
+        ]
+      },
+      "comparisons": [
+        {
+          "name": "alpha",
+          "app": 0.05,
+          "reference": 0.05,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "n_sig",
+          "app": 10,
+          "reference": 10,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "n_non_sig",
+          "app": 0,
+          "reference": 0,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "unadjusted_log_dor",
+          "app": 4.077548470343578,
+          "reference": 4.077548470343578,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "unadjusted_dor",
+          "app": 59.00065056342032,
+          "reference": 59.00065056342032,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "eta_20pct",
+          "app": null,
+          "reference": null,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "eta_null",
+          "app": null,
+          "reference": null,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "max_attenuation",
+          "app": 8.881784197001252e-16,
+          "reference": 8.881784197001252e-16,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "robustness",
+          "app": "High robustness",
+          "reference": "High robustness",
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows.length",
+          "app": 11,
+          "reference": 11,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[0].eta",
+          "app": 1,
+          "reference": 1,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[0].theta",
+          "app": 4.077548470343578,
+          "reference": 4.077548470343578,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[0].dor",
+          "app": 59.00065056342032,
+          "reference": 59.00065056342032,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[0].dor_ci.1",
+          "app": 42.84998656070471,
+          "reference": 42.84998656070471,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[0].dor_ci.2",
+          "app": 81.23868981791306,
+          "reference": 81.23868981791306,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[0].ratio_to_unadjusted",
+          "app": 1,
+          "reference": 1,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[1].eta",
+          "app": 1.25,
+          "reference": 1.25,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[1].theta",
+          "app": 4.077548470343578,
+          "reference": 4.077548470343578,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[1].dor",
+          "app": 59.00065056342032,
+          "reference": 59.00065056342032,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[1].dor_ci.1",
+          "app": 41.26245348752235,
+          "reference": 41.26245348752235,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[1].dor_ci.2",
+          "app": 84.36427000055872,
+          "reference": 84.36427000055872,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[1].ratio_to_unadjusted",
+          "app": 1,
+          "reference": 1,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[2].eta",
+          "app": 1.5,
+          "reference": 1.5,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[2].theta",
+          "app": 4.077548470343578,
+          "reference": 4.077548470343577,
+          "abs_diff": 8.881784197001252e-16,
+          "rel_diff": 2.1782167058465073e-16,
+          "pass": true
+        },
+        {
+          "name": "rows[2].dor",
+          "app": 59.00065056342032,
+          "reference": 59.00065056342027,
+          "abs_diff": 4.973799150320701e-14,
+          "rel_diff": 8.430075097179344e-16,
+          "pass": true
+        },
+        {
+          "name": "rows[2].dor_ci.1",
+          "app": 39.87789762922283,
+          "reference": 39.877897629222794,
+          "abs_diff": 3.552713678800501e-14,
+          "rel_diff": 8.908979384602876e-16,
+          "pass": true
+        },
+        {
+          "name": "rows[2].dor_ci.2",
+          "app": 87.29338741157382,
+          "reference": 87.29338741157375,
+          "abs_diff": 7.105427357601002e-14,
+          "rel_diff": 8.139708594535451e-16,
+          "pass": true
+        },
+        {
+          "name": "rows[2].ratio_to_unadjusted",
+          "app": 1,
+          "reference": 0.9999999999999991,
+          "abs_diff": 8.881784197001252e-16,
+          "rel_diff": 8.881784197001252e-16,
+          "pass": true
+        },
+        {
+          "name": "rows[3].eta",
+          "app": 2,
+          "reference": 2,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[3].theta",
+          "app": 4.077548470343578,
+          "reference": 4.077548470343578,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[3].dor",
+          "app": 59.00065056342032,
+          "reference": 59.00065056342032,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[3].dor_ci.1",
+          "app": 37.533053275331405,
+          "reference": 37.533053275331405,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[3].dor_ci.2",
+          "app": 92.74696469191247,
+          "reference": 92.74696469191245,
+          "abs_diff": 1.4210854715202004e-14,
+          "rel_diff": 1.5322177671698177e-16,
+          "pass": true
+        },
+        {
+          "name": "rows[3].ratio_to_unadjusted",
+          "app": 1,
+          "reference": 1,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[4].eta",
+          "app": 3,
+          "reference": 3,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[4].theta",
+          "app": 4.077548470343578,
+          "reference": 4.077548470343577,
+          "abs_diff": 8.881784197001252e-16,
+          "rel_diff": 2.1782167058465073e-16,
+          "pass": true
+        },
+        {
+          "name": "rows[4].dor",
+          "app": 59.00065056342032,
+          "reference": 59.00065056342027,
+          "abs_diff": 4.973799150320701e-14,
+          "rel_diff": 8.430075097179344e-16,
+          "pass": true
+        },
+        {
+          "name": "rows[4].dor_ci.1",
+          "app": 33.905047708399344,
+          "reference": 33.905047708399316,
+          "abs_diff": 2.842170943040401e-14,
+          "rel_diff": 8.382736893587398e-16,
+          "pass": true
+        },
+        {
+          "name": "rows[4].dor_ci.2",
+          "app": 102.67134253418139,
+          "reference": 102.67134253418129,
+          "abs_diff": 9.947598300641403e-14,
+          "rel_diff": 9.688777856712688e-16,
+          "pass": true
+        },
+        {
+          "name": "rows[4].ratio_to_unadjusted",
+          "app": 1,
+          "reference": 0.9999999999999991,
+          "abs_diff": 8.881784197001252e-16,
+          "rel_diff": 8.881784197001252e-16,
+          "pass": true
+        },
+        {
+          "name": "rows[5].eta",
+          "app": 4,
+          "reference": 4,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[5].theta",
+          "app": 4.077548470343578,
+          "reference": 4.077548470343578,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[5].dor",
+          "app": 59.00065056342032,
+          "reference": 59.00065056342032,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[5].dor_ci.1",
+          "app": 31.120357669258407,
+          "reference": 31.120357669258407,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[5].dor_ci.2",
+          "app": 111.85850766572449,
+          "reference": 111.85850766572449,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[5].ratio_to_unadjusted",
+          "app": 1,
+          "reference": 1,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[6].eta",
+          "app": 5,
+          "reference": 5,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[6].theta",
+          "app": 4.077548470343578,
+          "reference": 4.077548470343578,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[6].dor",
+          "app": 59.00065056342032,
+          "reference": 59.00065056342032,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[6].dor_ci.1",
+          "app": 28.85714058321808,
+          "reference": 28.85714058321808,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[6].dor_ci.2",
+          "app": 120.63138261631013,
+          "reference": 120.63138261631013,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[6].ratio_to_unadjusted",
+          "app": 1,
+          "reference": 1,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[7].eta",
+          "app": 7,
+          "reference": 7,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[7].theta",
+          "app": 4.077548470343577,
+          "reference": 4.077548470343577,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[7].dor",
+          "app": 59.00065056342027,
+          "reference": 59.00065056342027,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[7].dor_ci.1",
+          "app": 25.313125765711,
+          "reference": 25.313125765711,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[7].dor_ci.2",
+          "app": 137.5206206900875,
+          "reference": 137.5206206900875,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[7].ratio_to_unadjusted",
+          "app": 0.9999999999999991,
+          "reference": 0.9999999999999991,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[8].eta",
+          "app": 10,
+          "reference": 10,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[8].theta",
+          "app": 4.077548470343578,
+          "reference": 4.077548470343578,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[8].dor",
+          "app": 59.00065056342032,
+          "reference": 59.00065056342032,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[8].dor_ci.1",
+          "app": 21.458388846400894,
+          "reference": 21.45838884640089,
+          "abs_diff": 3.552713678800501e-15,
+          "rel_diff": 1.6556292759120074e-16,
+          "pass": true
+        },
+        {
+          "name": "rows[8].dor_ci.2",
+          "app": 162.22451703267996,
+          "reference": 162.22451703267996,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[8].ratio_to_unadjusted",
+          "app": 1,
+          "reference": 1,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[9].eta",
+          "app": 15,
+          "reference": 15,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[9].theta",
+          "app": 4.077548470343577,
+          "reference": 4.077548470343577,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[9].dor",
+          "app": 59.00065056342027,
+          "reference": 59.00065056342027,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[9].dor_ci.1",
+          "app": 17.095261500039868,
+          "reference": 17.095261500039868,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[9].dor_ci.2",
+          "app": 203.62816719116617,
+          "reference": 203.62816719116617,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[9].ratio_to_unadjusted",
+          "app": 0.9999999999999991,
+          "reference": 0.9999999999999991,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[10].eta",
+          "app": 20,
+          "reference": 20,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[10].theta",
+          "app": 4.077548470343578,
+          "reference": 4.077548470343578,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[10].dor",
+          "app": 59.00065056342032,
+          "reference": 59.00065056342032,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[10].dor_ci.1",
+          "app": 14.113989501598766,
+          "reference": 14.113989501598766,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[10].dor_ci.2",
+          "app": 246.64016977712154,
+          "reference": 246.64016977712154,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        },
+        {
+          "name": "rows[10].ratio_to_unadjusted",
+          "app": 1,
+          "reference": 1,
+          "abs_diff": 0,
+          "rel_diff": 0,
+          "pass": true
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,268 @@
+{
+  "timestamp": "2026-02-12T14:44:55.364603",
+  "version": "DTA Pro v4.8",
+  "results": {
+    "passed": 63,
+    "failed": 0,
+    "warnings": 0,
+    "skipped": 0,
+    "score": 10.0
+  },
+  "passed_tests": [
+    [
+      "Setup",
+      "Firefox WebDriver initialized"
+    ],
+    [
+      "Setup",
+      "Application loaded"
+    ],
+    [
+      "Setup",
+      "Accessibility enhancements loaded"
+    ],
+    [
+      "Accessibility",
+      "ARIA label: Run Analysis button"
+    ],
+    [
+      "Accessibility",
+      "ARIA label: Undo button"
+    ],
+    [
+      "Accessibility",
+      "ARIA label: Redo button"
+    ],
+    [
+      "Accessibility",
+      "ARIA label: Theme toggle button"
+    ],
+    [
+      "Accessibility",
+      "Keyboard navigation: Tab key works"
+    ],
+    [
+      "Accessibility",
+      "Tab navigation: tablist role present"
+    ],
+    [
+      "Accessibility",
+      "Tab navigation: 18 tabs with role=\"tab\""
+    ],
+    [
+      "Accessibility",
+      "Skip links: 7 found"
+    ],
+    [
+      "Accessibility",
+      "Focus visibility: :focus-visible supported"
+    ],
+    [
+      "Accessibility",
+      "Color scheme: rgb(15, 20, 25)"
+    ],
+    [
+      "Accessibility",
+      "Form labels: 100% inputs labeled"
+    ],
+    [
+      "UI",
+      "Tab: data"
+    ],
+    [
+      "UI",
+      "Tab: settings"
+    ],
+    [
+      "UI",
+      "Tab: results"
+    ],
+    [
+      "UI",
+      "Tab: sroc"
+    ],
+    [
+      "UI",
+      "Tab: forest"
+    ],
+    [
+      "UI",
+      "Tab: bias"
+    ],
+    [
+      "UI",
+      "Tab: clinical"
+    ],
+    [
+      "UI",
+      "Tab: sensitivity"
+    ],
+    [
+      "UI",
+      "Tab: metareg"
+    ],
+    [
+      "UI",
+      "Tab: quadas"
+    ],
+    [
+      "UI",
+      "Tab: advanced"
+    ],
+    [
+      "UI",
+      "Tab: cuttingedge"
+    ],
+    [
+      "UI",
+      "Tab: comparison"
+    ],
+    [
+      "UI",
+      "Tab: network"
+    ],
+    [
+      "UI",
+      "Tab: report"
+    ],
+    [
+      "UI",
+      "Tab: beyondr"
+    ],
+    [
+      "UI",
+      "Tab: validation"
+    ],
+    [
+      "UI",
+      "Tab: ultimate"
+    ],
+    [
+      "UI",
+      "Theme toggle: dark -> light"
+    ],
+    [
+      "UI",
+      "Dataset: Demo Data (12 studies)"
+    ],
+    [
+      "UI",
+      "Dataset: COVID Rapid Antigen (10 studies)"
+    ],
+    [
+      "UI",
+      "Dataset: TB Xpert (8 studies)"
+    ],
+    [
+      "UI",
+      "Dataset: k=3 Edge Case (3 studies)"
+    ],
+    [
+      "UI",
+      "Plot: SROC Plot"
+    ],
+    [
+      "UI",
+      "Plot: Forest Sensitivity"
+    ],
+    [
+      "UI",
+      "Plot: Forest Specificity"
+    ],
+    [
+      "UI",
+      "Plot: Deeks Funnel"
+    ],
+    [
+      "UI",
+      "Plot: Fagan Nomogram"
+    ],
+    [
+      "Functions",
+      "Exported: bivariateGLMM"
+    ],
+    [
+      "Functions",
+      "Exported: hsrocModel"
+    ],
+    [
+      "Functions",
+      "Exported: deeksTest"
+    ],
+    [
+      "Functions",
+      "Exported: runAnalysis"
+    ],
+    [
+      "Functions",
+      "Exported: loadDemoData"
+    ],
+    [
+      "Functions",
+      "Exported: switchTab"
+    ],
+    [
+      "Functions",
+      "Exported: validateAllStudies"
+    ],
+    [
+      "Functions",
+      "Exported: exportData"
+    ],
+    [
+      "Functions",
+      "Exported: generateReport"
+    ],
+    [
+      "Functions",
+      "Exported: toggleTheme"
+    ],
+    [
+      "Functions",
+      "v4.8 Function: sidikJonkmanVariance"
+    ],
+    [
+      "Functions",
+      "v4.8 Function: compareConfidenceIntervals"
+    ],
+    [
+      "Functions",
+      "v4.8 Function: runPriorSensitivityAnalysis"
+    ],
+    [
+      "Statistical",
+      "Test suite loaded successfully"
+    ],
+    [
+      "Statistical",
+      "Tests passed: 681"
+    ],
+    [
+      "Statistical",
+      "R validation: Sensitivity matches (diff: 0.0000)"
+    ],
+    [
+      "Statistical",
+      "R validation: Specificity matches (diff: 0.0000)"
+    ],
+    [
+      "Edge Cases",
+      "k=3 analysis completes"
+    ],
+    [
+      "Edge Cases",
+      "k=2 analysis completes"
+    ],
+    [
+      "Edge Cases",
+      "Zero cell correction produces valid DOR"
+    ],
+    [
+      "Edge Cases",
+      "Empty data handled gracefully"
+    ]
+  ],
+  "failed_tests": [],
+  "warnings": [],
+  "statistical_failures": []
+}

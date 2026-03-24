@@ -1,0 +1,83 @@
+{
+  "snapshot_date": "2026-03-07",
+  "app": "DTA Meta-Analysis Pro v4.9.2",
+  "source": {
+    "provider": "CRAN package index pages",
+    "retrieved_at": "2026-03-07",
+    "urls": [
+      "https://cran.r-project.org/web/packages/mada/index.html",
+      "https://cran.r-project.org/web/packages/diagmeta/index.html",
+      "https://cran.r-project.org/web/packages/meta4diag/index.html",
+      "https://cran.r-project.org/web/packages/metafor/index.html",
+      "https://cran.r-project.org/web/packages/netmeta/index.html"
+    ]
+  },
+  "packages": [
+    {
+      "package": "mada",
+      "version": "0.5.12",
+      "published": "2025-05-06",
+      "roles": [
+        "core_dta",
+        "reitsma",
+        "hsroc",
+        "deeks"
+      ],
+      "parity_priority": "phase_1",
+      "source_url": "https://cran.r-project.org/web/packages/mada/index.html"
+    },
+    {
+      "package": "diagmeta",
+      "version": "0.5-1",
+      "published": "2022-12-21",
+      "roles": [
+        "threshold_meta_analysis",
+        "multi_cutpoint_models"
+      ],
+      "parity_priority": "phase_2",
+      "source_url": "https://cran.r-project.org/web/packages/diagmeta/index.html"
+    },
+    {
+      "package": "meta4diag",
+      "version": "2.1.1",
+      "published": "2021-11-30",
+      "roles": [
+        "bayesian_bivariate_dta",
+        "posterior_inference"
+      ],
+      "parity_priority": "phase_2",
+      "source_url": "https://cran.r-project.org/web/packages/meta4diag/index.html"
+    },
+    {
+      "package": "metafor",
+      "version": "4.8-0",
+      "published": "2025-01-28",
+      "roles": [
+        "meta_regression",
+        "multilevel_diagnostics",
+        "influence_analysis"
+      ],
+      "parity_priority": "phase_3",
+      "source_url": "https://cran.r-project.org/web/packages/metafor/index.html"
+    },
+    {
+      "package": "netmeta",
+      "version": "3.3-1",
+      "published": "2026-01-28",
+      "roles": [
+        "network_workflows",
+        "ranking",
+        "comparative_presentation"
+      ],
+      "parity_priority": "phase_5",
+      "source_url": "https://cran.r-project.org/web/packages/netmeta/index.html"
+    }
+  ],
+  "release_gates": {
+    "validated_methods_require_reference_package": true,
+    "validated_methods_require_reference_version": true,
+    "validated_methods_require_source_url": true,
+    "validated_methods_require_tolerances": true,
+    "experimental_methods_must_be_labeled": true
+  }
+}

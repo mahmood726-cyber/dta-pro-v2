@@ -1,0 +1,343 @@
+{
+  "schema_version": "r_parity_matrix.v1",
+  "generated_at": "2026-03-07T00:00:00Z",
+  "app": "DTA Meta-Analysis Pro v4.9.2",
+  "methods": [
+    {
+      "method_id": "bivariate_glmm",
+      "label": "Bivariate GLMM / Reitsma model",
+      "category": "core_model",
+      "ui_surface": [
+        "Results",
+        "SROC",
+        "Forest",
+        "Validation"
+      ],
+      "app_file": "dta-pro-v3.7.html",
+      "app_anchor_line": 4361,
+      "reference_package": "mada",
+      "reference_version_target": "0.5.12",
+      "reference_source_url": "https://cran.r-project.org/web/packages/mada/index.html",
+      "validation_status": "validated",
+      "phase": "phase_1",
+      "validation_artifacts": [
+        "benchmark_mada_reference_r.json",
+        "benchmark_comparison_report.json",
+        "validation_reference.json"
+      ],
+      "tolerance_abs": {
+        "sensitivity": 0.005,
+        "specificity": 0.005,
+        "log_dor": 0.05,
+        "auc": 0.005,
+        "tau2": 0.025,
+        "rho": 0.025
+      },
+      "tolerance_rel": {
+        "default": 0.02
+      },
+      "notes": "Current core release gate."
+    },
+    {
+      "method_id": "hsroc_model",
+      "label": "HSROC model",
+      "category": "core_model",
+      "ui_surface": [
+        "Results",
+        "SROC",
+        "Validation"
+      ],
+      "app_file": "dta-pro-v3.7.html",
+      "app_anchor_line": 4948,
+      "reference_package": "mada",
+      "reference_version_target": "0.5.12",
+      "reference_source_url": "https://cran.r-project.org/web/packages/mada/index.html",
+      "validation_status": "partial",
+      "phase": "phase_1",
+      "validation_artifacts": [
+        "validation_reference.json"
+      ],
+      "tolerance_abs": {
+        "lambda": 0.05,
+        "theta": 0.05,
+        "sigma2_alpha": 0.05,
+        "sigma2_theta": 0.05
+      },
+      "tolerance_rel": {
+        "default": 0.03
+      },
+      "notes": "Reference values exist, but scenario-level parity is not yet formalized."
+    },
+    {
+      "method_id": "deeks_test",
+      "label": "Deeks funnel asymmetry test",
+      "category": "publication_bias",
+      "ui_surface": [
+        "Bias",
+        "Validation"
+      ],
+      "app_file": "dta-pro-v3.7.html",
+      "app_anchor_line": 5575,
+      "reference_package": "mada",
+      "reference_version_target": "0.5.12",
+      "reference_source_url": "https://cran.r-project.org/web/packages/mada/index.html",
+      "validation_status": "partial",
+      "phase": "phase_1",
+      "validation_artifacts": [
+        "validation_reference.json",
+        "pubbias_reference_r.json",
+        "pubbias_comparison_report.json"
+      ],
+      "tolerance_abs": {
+        "slope": 0.1,
+        "p_value": 0.05
+      },
+      "tolerance_rel": {
+        "default": 0.05
+      },
+      "notes": "Comparator artifacts exist, but the status labeling in-app is still incomplete."
+    },
+    {
+      "method_id": "auto_model_selection",
+      "label": "Auto stacked model selection",
+      "category": "core_model",
+      "ui_surface": [
+        "Results",
+        "Validation"
+      ],
+      "app_file": "dta-pro-v3.7.html",
+      "app_anchor_line": 5393,
+      "reference_package": "mada",
+      "reference_version_target": "0.5.12",
+      "reference_source_url": "https://cran.r-project.org/web/packages/mada/index.html",
+      "validation_status": "planned",
+      "phase": "phase_1",
+      "validation_artifacts": [],
+      "tolerance_abs": {
+        "aic": 1.0,
+        "bic": 1.0
+      },
+      "tolerance_rel": {
+        "default": 0.05
+      },
+      "notes": "Needs explicit comparator logic and validation badge behavior."
+    },
+    {
+      "method_id": "meta_regression",
+      "label": "Meta-regression",
+      "category": "diagnostics",
+      "ui_surface": [
+        "Meta-regression",
+        "Advanced"
+      ],
+      "app_file": "dta-pro-v3.7.html",
+      "app_anchor_line": 5637,
+      "reference_package": "metafor",
+      "reference_version_target": "4.8-0",
+      "reference_source_url": "https://cran.r-project.org/web/packages/metafor/index.html",
+      "validation_status": "planned",
+      "phase": "phase_3",
+      "validation_artifacts": [],
+      "tolerance_abs": {
+        "slope": 0.05,
+        "p_value": 0.05
+      },
+      "tolerance_rel": {
+        "default": 0.05
+      },
+      "notes": "Method exists in-app but does not yet have a dedicated parity artifact."
+    },
+    {
+      "method_id": "leave_one_out_influence",
+      "label": "Leave-one-out and influence diagnostics",
+      "category": "diagnostics",
+      "ui_surface": [
+        "Sensitivity",
+        "Advanced"
+      ],
+      "app_file": "dta-pro-v3.7.html",
+      "app_anchor_line": 5689,
+      "reference_package": "metafor",
+      "reference_version_target": "4.8-0",
+      "reference_source_url": "https://cran.r-project.org/web/packages/metafor/index.html",
+      "validation_status": "planned",
+      "phase": "phase_3",
+      "validation_artifacts": [],
+      "tolerance_abs": {
+        "delta_sensitivity": 0.01,
+        "delta_specificity": 0.01,
+        "delta_dor": 0.5
+      },
+      "tolerance_rel": {
+        "default": 0.05
+      },
+      "notes": "Needs dedicated fixed-dataset comparator coverage."
+    },
+    {
+      "method_id": "comparative_dta",
+      "label": "Comparative paired-test DTA",
+      "category": "comparative",
+      "ui_surface": [
+        "Comparison"
+      ],
+      "app_file": "dta-pro-v3.7.html",
+      "app_anchor_line": 15275,
+      "reference_package": "local_gap_fill_reference",
+      "reference_version_target": "2026-03-03",
+      "reference_source_url": "advanced_validation_reference.json",
+      "validation_status": "partial",
+      "phase": "phase_3",
+      "validation_artifacts": [
+        "advanced_validation_reference.json"
+      ],
+      "tolerance_abs": {
+        "sensitivity_difference": 0.01,
+        "specificity_difference": 0.01,
+        "p_value": 0.02
+      },
+      "tolerance_rel": {
+        "default": 0.05
+      },
+      "notes": "Local gap-fill reference exists, but no external CRAN parity target is wired yet."
+    },
+    {
+      "method_id": "network_dta",
+      "label": "Network DTA ranking",
+      "category": "network",
+      "ui_surface": [
+        "Network"
+      ],
+      "app_file": "dta-pro-v3.7.html",
+      "app_anchor_line": 15769,
+      "reference_package": "netmeta",
+      "reference_version_target": "3.3-1",
+      "reference_source_url": "https://cran.r-project.org/web/packages/netmeta/index.html",
+      "validation_status": "experimental",
+      "phase": "phase_5",
+      "validation_artifacts": [
+        "advanced_validation_reference.json"
+      ],
+      "tolerance_abs": {
+        "relative_dor": 0.25,
+        "rank": 1
+      },
+      "tolerance_rel": {
+        "default": 0.1
+      },
+      "notes": "Must not be promoted to validated until a netmeta-aligned comparator lane exists."
+    },
+    {
+      "method_id": "ipd_meta_analysis",
+      "label": "IPD meta-analysis",
+      "category": "ipd",
+      "ui_surface": [
+        "Network",
+        "Ultimate"
+      ],
+      "app_file": "dta-pro-v3.7.html",
+      "app_anchor_line": 21872,
+      "reference_package": null,
+      "reference_version_target": null,
+      "reference_source_url": null,
+      "validation_status": "experimental",
+      "phase": "phase_5",
+      "validation_artifacts": [
+        "advanced_validation_reference.json"
+      ],
+      "tolerance_abs": {},
+      "tolerance_rel": {},
+      "notes": "Local reference exists, but no named CRAN baseline has been committed for release-grade parity."
+    },
+    {
+      "method_id": "threshold_meta_analysis",
+      "label": "Threshold meta-analysis",
+      "category": "threshold",
+      "ui_surface": [
+        "Clinical",
+        "Threshold tools"
+      ],
+      "app_file": "dta-pro-v3.7.html",
+      "app_anchor_line": 19738,
+      "reference_package": "diagmeta",
+      "reference_version_target": "0.5-1",
+      "reference_source_url": "https://cran.r-project.org/web/packages/diagmeta/index.html",
+      "validation_status": "planned",
+      "phase": "phase_2",
+      "validation_artifacts": [],
+      "tolerance_abs": {
+        "threshold": 0.02,
+        "sensitivity": 0.01,
+        "specificity": 0.01
+      },
+      "tolerance_rel": {
+        "default": 0.05
+      },
+      "notes": "Current tools are utility optimizers, not full diagmeta-style threshold synthesis."
+    },
+    {
+      "method_id": "bayesian_bivariate_dta",
+      "label": "Bayesian bivariate DTA",
+      "category": "bayesian",
+      "ui_surface": [
+        "Advanced",
+        "Ultimate"
+      ],
+      "app_file": "dta-pro-v3.7.html",
+      "app_anchor_line": 24053,
+      "reference_package": "meta4diag",
+      "reference_version_target": "2.1.1",
+      "reference_source_url": "https://cran.r-project.org/web/packages/meta4diag/index.html",
+      "validation_status": "planned",
+      "phase": "phase_2",
+      "validation_artifacts": [],
+      "tolerance_abs": {
+        "posterior_mean_sensitivity": 0.01,
+        "posterior_mean_specificity": 0.01,
+        "credible_interval_bound": 0.02
+      },
+      "tolerance_rel": {
+        "default": 0.05
+      },
+      "notes": "MCMC worker exists, but no meta4diag parity artifact or prior mapping has been locked."
+    },
+    {
+      "method_id": "decision_curve_analysis",
+      "label": "Decision curve analysis",
+      "category": "clinical_utility",
+      "ui_surface": [
+        "Clinical"
+      ],
+      "app_file": "dta-pro-v3.7.html",
+      "app_anchor_line": 18228,
+      "reference_package": null,
+      "reference_version_target": null,
+      "reference_source_url": null,
+      "validation_status": "workflow",
+      "phase": "phase_4",
+      "validation_artifacts": [],
+      "tolerance_abs": {},
+      "tolerance_rel": {},
+      "notes": "Product differentiator. Should be tied to validated model outputs, not pitched as R-parity."
+    },
+    {
+      "method_id": "report_export_provenance",
+      "label": "Report and provenance export",
+      "category": "workflow",
+      "ui_surface": [
+        "Report",
+        "Export"
+      ],
+      "app_file": "dta-pro-v3.7.html",
+      "app_anchor_line": 9649,
+      "reference_package": null,
+      "reference_version_target": null,
+      "reference_source_url": null,
+      "validation_status": "workflow",
+      "phase": "phase_4",
+      "validation_artifacts": [],
+      "tolerance_abs": {},
+      "tolerance_rel": {},
+      "notes": "This is an exceed-R target, not a parity target."
+    }
+  ]
+}

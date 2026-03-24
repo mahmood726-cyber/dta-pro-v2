@@ -1,0 +1,118 @@
+{
+  "generated_at": "2026-03-04T11:02:22+0000",
+  "dataset_path": "C:/HTML apps/DTA_Pro_Review/R_validation/gapfill_comparator_dataset.json",
+  "methods": {
+    "comparative_dta": {
+      "pooled": {
+        "test1": {
+          "sens": 0.84345463089686024,
+          "spec": 0.8074255346909609
+        },
+        "test2": {
+          "sens": 0.78926533954101874,
+          "spec": 0.75189523544805381
+        }
+      },
+      "comparison": {
+        "sensitivity_difference": 0.054189291355841496,
+        "sensitivity_ci": [0.040602210558010672, 0.067776372153672326],
+        "sensitivity_p_value": 2.2204460492503131e-16,
+        "specificity_difference": 0.055530299242907089,
+        "specificity_ci": [0.045111316487076107, 0.065949281998738063],
+        "specificity_p_value": 0,
+        "conclusion": "Test 1 has significantly HIGHER sensitivity. Test 1 has significantly HIGHER specificity"
+      }
+    },
+    "threshold_optimization": {
+      "youden": {
+        "sens": 0.82838911544959959,
+        "spec": 0.79711311907404703,
+        "j": 0.62550223452364673
+      },
+      "closest_to_ideal": {
+        "sens": 0.82838911544959959,
+        "spec": 0.79711311907404703,
+        "distance": 0.26573178610778325
+      },
+      "min_cost": {
+        "sens": 0.82838911544959959,
+        "spec": 0.79711311907404703,
+        "expected_cost": 0.10986353375346736,
+        "prevalence": 0.12
+      },
+      "constrained_optimal": {
+        "sens": 0.82838911544959959,
+        "spec": 0.79711311907404703,
+        "meets_constraints": false,
+        "target_sens": 0.84999999999999998,
+        "target_spec": 0.80000000000000004
+      },
+      "recommendation": []
+    },
+    "network_meta_dta": {
+      "n_tests": 3,
+      "relative_dors": [
+        {
+          "comparison": "PET vs MRI",
+          "r_dor": 2.1527379710673493,
+          "log_r_dor": 0.7667405068731955,
+          "favors": "PET"
+        },
+        {
+          "comparison": "PET vs CT",
+          "r_dor": 3.6718446939190446,
+          "log_r_dor": 1.3006941771794427,
+          "favors": "PET"
+        },
+        {
+          "comparison": "MRI vs CT",
+          "r_dor": 1.705662622794035,
+          "log_r_dor": 0.53395367030624707,
+          "favors": "MRI"
+        }
+      ],
+      "rankings": [
+        {
+          "test": "PET",
+          "dor": 64.66226946524273,
+          "rank": 1,
+          "sucra": 1
+        },
+        {
+          "test": "MRI",
+          "dor": 30.037222520482842,
+          "rank": 2,
+          "sucra": 0.5
+        },
+        {
+          "test": "CT",
+          "dor": 17.6102953298461,
+          "rank": 3,
+          "sucra": 0
+        }
+      ],
+      "best_test": "PET"
+    },
+    "ipd_two_stage": {
+      "n_patients": 105,
+      "n_studies": 3,
+      "one_stage": {
+        "sensitivity": 0.80000000000000004,
+        "specificity": 0.80000000000000004
+      },
+      "two_stage": {
+        "sensitivity": 0.79156966517336436,
+        "specificity": 0.7967701271887494,
+        "dor": 14.889280582383716
+      },
+      "heterogeneity": {
+        "q_sens": 1.1603388747321051,
+        "q_spec": 0.6158883471186426,
+        "i2_sens": 0,
+        "i2_spec": 0,
+        "p_q_sens": 0.55980350689752711,
+        "p_q_spec": 0.7349563468607101
+      }
+    }
+  }
+}
