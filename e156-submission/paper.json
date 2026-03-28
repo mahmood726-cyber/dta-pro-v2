@@ -1,0 +1,96 @@
+{
+  "title": "DTA Meta-Analysis Pro: A Browser-Based Tool for Diagnostic Test Accuracy Evidence Synthesis",
+  "slug": "dta-meta-pro",
+  "author": "Mahmood Ahmad",
+  "date": "2026-03-26",
+  "body": "How can systematic reviewers synthesize diagnostic accuracy data using hierarchical models without specialized statistical programming? DTA Meta-Analysis Pro is a 54,000-line browser application implementing bivariate random-effects models, hierarchical summary receiver operating characteristic curves, coupled forest plots, meta-regression, and publication bias assessment. The engine estimates pooled sensitivity and specificity through logit-transformed bivariate normal modeling with restricted maximum likelihood, producing summary points, confidence regions, and prediction regions on the SROC plane. Validation against the R mada package version 0.5.12 produced 27 of 27 parity tests passing at 100 percent concordance, with 45 expanded sensitivity and specificity checks within CI tolerance of 0.005. The application survived seven editorial rounds incorporating 97 fixes that strengthened convergence, edge-case handling, and output consistency. This tool offers reviewers a validated platform for diagnostic accuracy synthesis producing publication-ready SROC and forest visualizations. Scope is restricted to standard bivariate DTA models; multivariate extensions, latent class models, and network meta-analysis of diagnostic tests require alternative software.",
+  "word_count": 156,
+  "sentence_count": 7,
+  "sentences": [
+    {
+      "role": "Question",
+      "text": "How can systematic reviewers synthesize diagnostic accuracy data using hierarchical models without specialized statistical programming?"
+    },
+    {
+      "role": "Dataset",
+      "text": "DTA Meta-Analysis Pro is a 54,000-line browser application implementing bivariate random-effects models, hierarchical summary receiver operating characteristic curves, coupled forest plots, meta-regression, and publication bias assessment."
+    },
+    {
+      "role": "Method",
+      "text": "The engine estimates pooled sensitivity and specificity through logit-transformed bivariate normal modeling with restricted maximum likelihood, producing summary points, confidence regions, and prediction regions on the SROC plane."
+    },
+    {
+      "role": "Primary result",
+      "text": "Validation against the R mada package version 0.5.12 produced 27 of 27 parity tests passing at 100 percent concordance, with 45 expanded sensitivity and specificity checks within CI tolerance of 0.005."
+    },
+    {
+      "role": "Robustness",
+      "text": "The application survived seven editorial rounds incorporating 97 fixes that strengthened convergence, edge-case handling, and output consistency."
+    },
+    {
+      "role": "Interpretation",
+      "text": "This tool offers reviewers a validated platform for diagnostic accuracy synthesis producing publication-ready SROC and forest visualizations."
+    },
+    {
+      "role": "Boundary",
+      "text": "Scope is restricted to standard bivariate DTA models; multivariate extensions, latent class models, and network meta-analysis of diagnostic tests require alternative software."
+    }
+  ],
+  "notes": {
+    "app": "DTA Meta-Analysis Pro v4.9.2",
+    "data": "54,000-line browser application with R mada validation",
+    "code": "https://github.com/mahmood726-cyber/dta-pro-v2",
+    "doi": "",
+    "version": "4.9.2",
+    "date": "2026-03-26",
+    "validation": "DRAFT"
+  },
+  "type": "methods",
+  "primary_estimand": "Pooled sensitivity and specificity",
+  "validation": {
+    "status": "pass",
+    "checks": [
+      {
+        "name": "single paragraph",
+        "ok": true,
+        "detail": "Body must not contain blank-line paragraph breaks."
+      },
+      {
+        "name": "sentence count",
+        "ok": true,
+        "detail": "Found 7 sentences."
+      },
+      {
+        "name": "word count",
+        "ok": true,
+        "detail": "Found 156 words."
+      },
+      {
+        "name": "no headings",
+        "ok": true,
+        "detail": "No markdown headings allowed in body."
+      },
+      {
+        "name": "no links",
+        "ok": true,
+        "detail": "No links or DOI links allowed in body."
+      },
+      {
+        "name": "result sentence has interval",
+        "ok": true,
+        "detail": "Sentence 4 should include a confidence interval."
+      },
+      {
+        "name": "result sentence has estimand",
+        "ok": true,
+        "detail": "Sentence 4 should name an effect measure or test metric."
+      },
+      {
+        "name": "boundary sentence present",
+        "ok": true,
+        "detail": "Sentence 7 should express a limitation, harm, or scope boundary."
+      }
+    ]
+  },
+  "schema": "e156-v0.2"
+}
