@@ -371,19 +371,19 @@ We thank the developers of the R `mada`, `jStat`, `Math.js`, and `Plotly.js` pac
 
 3. Defined JJ, Altman DG. Diagnostic tests 4: likelihood ratios. BMJ. 2004;329:168-169.
 
-4. Reitsma JB, Glas AS, Rutjes AW, et al. Bivariate analysis of sensitivity and specificity produces informative summary measures in diagnostic reviews. J Clin Epidemiol. 2005;58:982-990.
+4. Reitsma JB, Glas AS, Rutjes AW, et al. Bivariate analysis of sensitivity and specificity produces informative summary measures in diagnostic reviews. J Clin Epidemiol. 2005;58:982-990. doi:10.1016/j.jclinepi.2005.02.022
 
 5. Rutter CM, Gatsonis CA. A hierarchical regression approach to meta-analysis of diagnostic test accuracy evaluations. Stat Med. 2001;20:2865-2884.
 
 6. Defined P, Defined C, Defined Y, et al. Cochrane Handbook for Systematic Reviews of Diagnostic Test Accuracy, Chapter 10. Cochrane; 2023.
 
-7. Harbord RM, Defined JJ, Egger M, et al. A unification of models for meta-analysis of diagnostic accuracy studies. Biostatistics. 2007;8:239-251.
+7. Harbord RM, Defined JJ, Egger M, et al. A unification of models for meta-analysis of diagnostic accuracy studies. Biostatistics. 2007;8:239-251. doi:10.1093/biostatistics/kxl004
 
 8. Doebler P, Holling H. Meta-analysis of diagnostic accuracy with mada. R package version 0.5.12; 2023.
 
 9. Defined G, Defined S. diagmeta: Meta-Analysis of Diagnostic Accuracy Studies with Several Cutpoints. R package; 2023.
 
-10. Viechtbauer W. Conducting meta-analyses in R with the metafor package. J Stat Softw. 2010;36:1-48.
+10. Viechtbauer W. Conducting meta-analyses in R with the metafor package. J Stat Softw. 2010;36:1-48. doi:10.18637/jss.v036.i03
 
 11. Defined MM, Defined AW, Defined PM, et al. Variation in diagnostic accuracy studies: A systematic review and meta-epidemiological study. BMJ Open. 2019;9:e025982.
 
@@ -405,7 +405,7 @@ We thank the developers of the R `mada`, `jStat`, `Math.js`, and `Plotly.js` pac
 
 20. Afzali HH, Karnon J, Defined L. CT colonography for colorectal polyps: A systematic review and meta-analysis. Radiology. 2012;265:393-403.
 
-21. Glas AS, Defined D, Defined M, et al. The diagnostic odds ratio: A single indicator of test performance. J Clin Epidemiol. 2003;56:1129-1135.
+21. Glas AS, Defined D, Defined M, et al. The diagnostic odds ratio: A single indicator of test performance. J Clin Epidemiol. 2003;56:1129-1135. doi:10.1016/S0895-4356(03)00177-X
 
 22. W3C Web Accessibility Initiative. Web Content Accessibility Guidelines (WCAG) 2.1. W3C Recommendation; 2018.
 

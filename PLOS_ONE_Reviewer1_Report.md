@@ -170,11 +170,11 @@ Overall, the manuscript meets PLOS ONE criteria for scientific rigor and technic
 
 ## References Cited
 
-- Reitsma JB, et al. J Clin Epidemiol. 2005;58:982-990.
+- Reitsma JB, et al. J Clin Epidemiol. 2005;58:982-990. doi:10.1016/j.jclinepi.2005.02.022
 - Rutter CM, Gatsonis CA. Stat Med. 2001;20:2865-2884.
 - Hartung J, Knapp G. Stat Med. 2001;20:3875-3889.
-- Takwoingi Y, et al. Stat Methods Med Res. 2017;26:1896-1911.
-- Deeks JJ, et al. J Clin Epidemiol. 2005;58:882-893.
+- Takwoingi Y, et al. Stat Methods Med Res. 2017;26:1896-1911. doi:10.1177/0962280215592269
+- Deeks JJ, et al. J Clin Epidemiol. 2005;58:882-893. doi:10.1016/j.jclinepi.2005.01.016
 
 ---
 
