@@ -509,16 +509,16 @@ The app now also includes two additional publication-bias diagnostics in the Pub
 
 ## References
 
-1. Reitsma JB, et al. J Clin Epidemiol. 2005;58:982-990
+1. Reitsma JB, et al. J Clin Epidemiol. 2005;58:982-990. doi:10.1016/j.jclinepi.2005.02.022
 2. Rutter CM, Gatsonis CA. Stat Med. 2001;20:2865-2884
-3. Harbord RM, et al. Biostatistics. 2007;8:239-251
-4. Jackson D, et al. Stat Med. 2012;31:2805-2817
+3. Harbord RM, et al. Biostatistics. 2007;8:239-251. doi:10.1093/biostatistics/kxl004
+4. Jackson D, et al. Stat Med. 2012;31:2805-2817. doi:10.1002/sim.5453
 5. Hartung J, Knapp G. Stat Med. 2001;20:3875-3889
 6. DerSimonian R, Laird N. Control Clin Trials. 1986;7:177-188
-7. Deeks JJ, et al. J Clin Epidemiol. 2005;58:882-893
+7. Deeks JJ, et al. J Clin Epidemiol. 2005;58:882-893. doi:10.1016/j.jclinepi.2005.01.016
 8. Duval S, Tweedie R. Biometrics. 2000;56:455-463
-9. Egger M, et al. BMJ. 1997;315:629-634
-10. IntHout J, et al. BMJ Open. 2016;6:e010247
+9. Egger M, et al. BMJ. 1997;315:629-634. doi:10.1136/bmj.315.7109.629
+10. IntHout J, et al. BMJ Open. 2016;6:e010247. doi:10.1136/bmjopen-2016-010247
 11. Copas JB, Shi JQ. Stat Methods Med Res. 2001;10:251-265
 12. Hattori S, Zhou XH. Stat Med. 2024;43:1048-1067
 13. Stanley TD, Doucouliagos H. Res Synth Methods. 2014;5:60-78
