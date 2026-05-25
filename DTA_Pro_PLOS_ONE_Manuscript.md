@@ -365,29 +365,29 @@ We thank the developers of the R `mada`, `jStat`, `Math.js`, and `Plotly.js` pac
 
 ## References
 
-1. Defined JJ, Bossuyt PM, Leeflang MM, et al. Cochrane Handbook for Systematic Reviews of Diagnostic Test Accuracy, Version 2. Cochrane; 2023.
+1. Deeks JJ, Bossuyt PM, Leeflang MM, Takwoingi Y, eds. Cochrane Handbook for Systematic Reviews of Diagnostic Test Accuracy, Version 2. Cochrane; 2023. doi:10.1002/9781119756194
 
-2. Defined JJ, Macaskill P, Irwig L. The analysis of diagnostic accuracy studies: Estimating and comparing sensitivities and specificities. In: Defined JJ, Bossuyt PM, Gatsonis C, eds. Cochrane Handbook for Systematic Reviews of Diagnostic Test Accuracy; 2010.
+2. Deeks JJ, Macaskill P, Irwig L. The analysis of diagnostic accuracy studies: Estimating and comparing sensitivities and specificities. In: Deeks JJ, Bossuyt PM, Gatsonis C, eds. Cochrane Handbook for Systematic Reviews of Diagnostic Test Accuracy; 2010.
 
-3. Defined JJ, Altman DG. Diagnostic tests 4: likelihood ratios. BMJ. 2004;329:168-169.
+3. Deeks JJ, Altman DG. Diagnostic tests 4: likelihood ratios. BMJ. 2004;329(7458):168-169. doi:10.1136/bmj.329.7458.168
 
 4. Reitsma JB, Glas AS, Rutjes AW, et al. Bivariate analysis of sensitivity and specificity produces informative summary measures in diagnostic reviews. J Clin Epidemiol. 2005;58:982-990. doi:10.1016/j.jclinepi.2005.02.022
 
 5. Rutter CM, Gatsonis CA. A hierarchical regression approach to meta-analysis of diagnostic test accuracy evaluations. Stat Med. 2001;20:2865-2884.
 
-6. Defined P, Defined C, Defined Y, et al. Cochrane Handbook for Systematic Reviews of Diagnostic Test Accuracy, Chapter 10. Cochrane; 2023.
+6. Macaskill P, Gatsonis C, Takwoingi Y, Deeks JJ, Harbord RM, Takwoingi Y. Chapter 10: Analysing and presenting results. In: Deeks JJ, Bossuyt PM, Leeflang MM, Takwoingi Y, eds. Cochrane Handbook for Systematic Reviews of Diagnostic Test Accuracy, Version 2. Cochrane; 2023.
 
-7. Harbord RM, Defined JJ, Egger M, et al. A unification of models for meta-analysis of diagnostic accuracy studies. Biostatistics. 2007;8:239-251. doi:10.1093/biostatistics/kxl004
+7. Harbord RM, Deeks JJ, Egger M, Whiting P, Sterne JAC. A unification of models for meta-analysis of diagnostic accuracy studies. Biostatistics. 2007;8(2):239-251. doi:10.1093/biostatistics/kxl004
 
 8. Doebler P, Holling H. Meta-analysis of diagnostic accuracy with mada. R package version 0.5.12; 2023.
 
-9. Defined G, Defined S. diagmeta: Meta-Analysis of Diagnostic Accuracy Studies with Several Cutpoints. R package; 2023.
+9. Rücker G, Schwarzer G. diagmeta: Meta-Analysis of Diagnostic Accuracy Studies with Several Cutpoints. R package; 2023. https://cran.r-project.org/package=diagmeta
 
 10. Viechtbauer W. Conducting meta-analyses in R with the metafor package. J Stat Softw. 2010;36:1-48. doi:10.18637/jss.v036.i03
 
-11. Defined MM, Defined AW, Defined PM, et al. Variation in diagnostic accuracy studies: A systematic review and meta-epidemiological study. BMJ Open. 2019;9:e025982.
+11. <!-- TODO: verify — no CrossRef/PubMed hit for "BMJ Open. 2019;9:e025982" with this title; authors were "Defined MM/AW/PM" placeholders. Cited in body L41 to support "23% did not use appropriate bivariate/HSROC models". Replace with a verified source (e.g., Leeflang 2008 BMJ or Ochodo 2013) or remove the cited claim. --> [VERIFY] Variation in diagnostic accuracy studies: A systematic review and meta-epidemiological study. BMJ Open. 2019;9:e025982. [authors and DOI unverified]
 
-12. Defined J, Defined K. Web-based tools for evidence synthesis: A systematic review. Res Synth Methods. 2021;12:451-467.
+12. <!-- TODO: verify — no CrossRef hit for "Web-based tools for evidence synthesis: A systematic review. Res Synth Methods. 2021;12:451-467" with placeholder authors "Defined J/K". Cited in body L43. Consider real candidates: Kohl 2017 (RevMan/Covidence comparison) or Cierco Jimenez 2022 (web-based SR tools review). --> [VERIFY] Web-based tools for evidence synthesis: A systematic review. Res Synth Methods. 2021;12:451-467. [authors and DOI unverified]
 
 13. Mozilla Developer Network. Subresource Integrity. MDN Web Docs; 2024.
 
@@ -395,27 +395,27 @@ We thank the developers of the R `mada`, `jStat`, `Math.js`, and `Plotly.js` pac
 
 15. Higgins JPT, Thompson SG. Quantifying heterogeneity in a meta-analysis. Stat Med. 2002;21:1539-1558.
 
-16. Defined R, Defined D, Defined I, et al. A multivariate random-effects approach for meta-analysis of diagnostic test accuracy studies with threshold effects. Stat Med. 2017;36:1439-1468.
+16. <!-- TODO: verify — no CrossRef hit for "Stat Med. 2017;36:1439-1468" with this title and placeholder authors "Defined R/D/I". Plausible real candidates: Steinhauser et al. 2016 (BMC MRM); Riley et al. 2014 (Stat Methods Med Res); Jackson et al. 2017 (Stat Med multivariate). --> [VERIFY] A multivariate random-effects approach for meta-analysis of diagnostic test accuracy studies with threshold effects. Stat Med. 2017;36:1439-1468. [authors and DOI unverified]
 
-17. Defined JJ, Macaskill P, Irwig L. The performance of tests of publication bias and other sample size effects in systematic reviews of diagnostic test accuracy was assessed. J Clin Epidemiol. 2005;58:882-893.
+17. Deeks JJ, Macaskill P, Irwig L. The performance of tests of publication bias and other sample size effects in systematic reviews of diagnostic test accuracy was assessed. J Clin Epidemiol. 2005;58(9):882-893. doi:10.1016/j.jclinepi.2005.01.016
 
 18. Clopper CJ, Pearson ES. The use of confidence or fiducial limits illustrated in the case of the binomial. Biometrika. 1934;26:404-413.
 
 19. Efron B, Tibshirani RJ. An Introduction to the Bootstrap. Chapman & Hall/CRC; 1993.
 
-20. Afzali HH, Karnon J, Defined L. CT colonography for colorectal polyps: A systematic review and meta-analysis. Radiology. 2012;265:393-403.
+20. <!-- TODO: verify — could not confirm "Afzali HH, Karnon J" CT colonography Radiology 2012 paper in CrossRef; third author was "Defined L". This dataset is named at body L126 as validation. If fabricated, the validation result needs a real dataset citation; consider Pickhardt 2003 NEJM or Halligan 2005 Radiology as canonical CT-colonography DTA references. --> [VERIFY] Afzali HH, Karnon J, [author 3]. CT colonography for colorectal polyps: A systematic review and meta-analysis. Radiology. 2012;265:393-403. [3rd author and DOI unverified]
 
-21. Glas AS, Defined D, Defined M, et al. The diagnostic odds ratio: A single indicator of test performance. J Clin Epidemiol. 2003;56:1129-1135. doi:10.1016/S0895-4356(03)00177-X
+21. Glas AS, Lijmer JG, Prins MH, Bonsel GJ, Bossuyt PM. The diagnostic odds ratio: A single indicator of test performance. J Clin Epidemiol. 2003;56(11):1129-1135. doi:10.1016/S0895-4356(03)00177-X
 
 22. W3C Web Accessibility Initiative. Web Content Accessibility Guidelines (WCAG) 2.1. W3C Recommendation; 2018.
 
-23. Defined G, Defined D. Black box clinical prediction models: Transparency and accountability. JAMA. 2020;324:1895-1896.
+23. <!-- TODO: verify — could not confirm this JAMA 2020 viewpoint with placeholder authors "Defined G/D". Cited at body L269 for "black box" concern. Real candidate: Wynants et al. BMJ 2020;369:m1328 (prediction model COVID-19 review) or Norgeot et al. JAMA 2019 (clinical AI reproducibility). --> [VERIFY] Black box clinical prediction models: Transparency and accountability. JAMA. 2020;324:1895-1896. [authors and DOI unverified]
 
-24. Defined L, Defined A, Defined R. Model choice in meta-analysis of diagnostic test accuracy. J Clin Epidemiol. 2019;115:167-176.
+24. <!-- TODO: verify — could not confirm this JCE 2019 paper with placeholder authors "Defined L/A/R". Cited at body L277 for "model selection". Real candidate: Takwoingi et al. Stat Methods Med Res 2017;26:1896-1911 (already cited as ref [16]?). --> [VERIFY] Model choice in meta-analysis of diagnostic test accuracy. J Clin Epidemiol. 2019;115:167-176. [authors and DOI unverified]
 
-25. Defined R, Defined S, Defined T. Meta-analysis with few studies: Challenges and solutions. Res Synth Methods. 2022;13:428-443.
+25. <!-- TODO: verify — could not confirm this RSM 2022 paper with placeholder authors "Defined R/S/T". Cited at body L286 for "few studies" warning. Real candidates: IntHout 2015 (HKSJ vs DL, BMC MRM); Bender 2018 RSM 9:382 (very few studies); Gonnermann 2015 (small sample meta-analysis). --> [VERIFY] Meta-analysis with few studies: Challenges and solutions. Res Synth Methods. 2022;13:428-443. [authors and DOI unverified]
 
-26. Defined D, Defined H. Sample size requirements for bivariate meta-analysis of diagnostic test accuracy: A simulation study. Stat Med. 2015;34:2598-2614.
+26. <!-- TODO: verify — could not confirm this Stat Med 2015 simulation paper with placeholder authors "Defined D/H". Cited at body L293 for k<4 unreliability threshold. Real candidate: Takwoingi et al. Stat Methods Med Res 2017;26:1896-1911 (which actually IS a simulation study of bivariate DTA at small k); or use Diaz 2015 (BMC MRM) for sample-size guidance. --> [VERIFY] Sample size requirements for bivariate meta-analysis of diagnostic test accuracy: A simulation study. Stat Med. 2015;34:2598-2614. [authors and DOI unverified]
 
 ---
 

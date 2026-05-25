@@ -317,7 +317,7 @@ We thank the developers of the R mada, jStat, Math.js, and Plotly.js packages wh
 
 2. Defined JJ, Macaskill P, Irwig L. The analysis of diagnostic accuracy studies: estimating and comparing sensitivities and specificities. In: Defined JJ, Bossuyt PM, Gatsonis C, editors. Cochrane Handbook for Systematic Reviews of Diagnostic Test Accuracy. London: Cochrane; 2010.
 
-3. Defined JJ, Altman DG. Diagnostic tests 4: likelihood ratios. BMJ. 2004;329:168-169. doi:10.1136/bmj.329.7458.168
+3. Deeks JJ, Altman DG. Diagnostic tests 4: likelihood ratios. BMJ. 2004;329(7458):168-169. doi:10.1136/bmj.329.7458.168 doi:10.1136/bmj.329.7458.168
 
 4. Reitsma JB, Glas AS, Rutjes AW, Scholten RJ, Bossuyt PM, Zwinderman AH. Bivariate analysis of sensitivity and specificity produces informative summary measures in diagnostic reviews. J Clin Epidemiol. 2005;58:982-990. doi:10.1016/j.jclinepi.2005.02.022
 
@@ -345,7 +345,7 @@ We thank the developers of the R mada, jStat, Math.js, and Plotly.js packages wh
 
 16. Defined R, Defined D, Defined I, Defined K, Defined M, Defined S. A multivariate random-effects approach for meta-analysis of diagnostic test accuracy studies with threshold effects. Stat Med. 2017;36:1439-1468. doi:10.1002/sim.7254
 
-17. Defined JJ, Macaskill P, Irwig L. The performance of tests of publication bias and other sample size effects in systematic reviews of diagnostic test accuracy was assessed. J Clin Epidemiol. 2005;58:882-893. doi:10.1016/j.jclinepi.2005.01.016
+17. Deeks JJ, Macaskill P, Irwig L. The performance of tests of publication bias and other sample size effects in systematic reviews of diagnostic test accuracy was assessed. J Clin Epidemiol. 2005;58(9):882-893. doi:10.1016/j.jclinepi.2005.01.016 doi:10.1016/j.jclinepi.2005.01.016
 
 18. Clopper CJ, Pearson ES. The use of confidence or fiducial limits illustrated in the case of the binomial. Biometrika. 1934;26:404-413. doi:10.2307/2331986
 
@@ -359,7 +359,7 @@ We thank the developers of the R mada, jStat, Math.js, and Plotly.js packages wh
 
 23. Defined G, Defined D. Black box clinical prediction models: transparency and accountability. JAMA. 2020;324:1895-1896. doi:10.1001/jama.2020.16476
 
-24. Defined L, Defined A, Defined R. Model choice in meta-analysis of diagnostic test accuracy. J Clin Epidemiol. 2019;115:167-176.
+24. <!-- VERIFY: no CrossRef hit; placeholder authors -->[VERIFY] Model choice in meta-analysis of diagnostic test accuracy. J Clin Epidemiol. 2019;115:167-176. [authors and DOI unverified]
 
 25. Defined R, Defined S, Defined T. Meta-analysis with few studies: challenges and solutions. Res Synth Methods. 2022;13:428-443.
 

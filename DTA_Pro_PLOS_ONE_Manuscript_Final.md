@@ -424,7 +424,7 @@ We thank the developers of the R mada, jStat, Math.js, and Plotly.js packages wh
 
 24. Rudin C. Stop explaining black box machine learning models for high stakes decisions and use interpretable models instead. Nat Mach Intell. 2019;1:206-215. doi:10.1038/s42256-019-0048-x
 
-25. Defined L, Defined A, Defined R. Model choice in meta-analysis of diagnostic test accuracy. J Clin Epidemiol. 2019;115:167-176.
+25. <!-- VERIFY: no CrossRef hit; placeholder authors -->[VERIFY] Model choice in meta-analysis of diagnostic test accuracy. J Clin Epidemiol. 2019;115:167-176. [authors and DOI unverified]
 
 26. IntHout J, Ioannidis JP, Borm GF. The Hartung-Knapp-Sidik-Jonkman method for random effects meta-analysis is straightforward and considerably outperforms the standard DerSimonian-Laird method. BMC Med Res Methodol. 2014;14:25. doi:10.1186/1471-2288-14-25
 
