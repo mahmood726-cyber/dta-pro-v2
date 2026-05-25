@@ -248,7 +248,7 @@
           </div>
           <div class="form-group">
             <label class="checkbox-group">
-              <input type="checkbox" id="autoTryProfile" checked>
+              <input type="checkbox" id="autoTryProfile" checked aria-label="Auto AIC Dominance Threshold">
               Auto mode: attempt profile-likelihood CIs (fallback to Wald on failure)
             </label>
           </div>
@@ -294,19 +294,19 @@
         <div class="card-body">
           <div class="form-group">
             <label class="checkbox-group">
-              <input type="checkbox" id="optConfRegion" checked>
+              <input type="checkbox" id="optConfRegion" checked aria-label="Analysis Options">
               Show 95% Confidence Region on SROC
             </label>
           </div>
           <div class="form-group">
             <label class="checkbox-group">
-              <input type="checkbox" id="optPredRegion" checked>
+              <input type="checkbox" id="optPredRegion" checked aria-label="Analysis Options">
               Show 95% Prediction Region on SROC
             </label>
           </div>
           <div class="form-group">
             <label class="checkbox-group">
-              <input type="checkbox" id="optBootstrap">
+              <input type="checkbox" id="optBootstrap" aria-label="Opt Bootstrap">
               Bootstrap CIs (500 replicates, non-parametric with BCa correction) - slower but bias-corrected
             </label>
             <div style="font-size:0.7rem;color:var(--text-muted);margin-left:1.5rem;margin-top:0.25rem;">
@@ -316,13 +316,13 @@
           </div>
           <div class="form-group">
             <label class="checkbox-group">
-              <input type="checkbox" id="optLeaveOneOut" checked>
+              <input type="checkbox" id="optLeaveOneOut" checked aria-label="Opt Leave One Out">
               Leave-One-Out Sensitivity Analysis
             </label>
           </div>
           <div class="form-group">
             <label class="checkbox-group">
-              <input type="checkbox" id="optDeeks" checked>
+              <input type="checkbox" id="optDeeks" checked aria-label="Opt Deeks">
               Deeks' Funnel Plot Asymmetry Test
             </label>
           </div>
@@ -1770,10 +1770,10 @@
           <div class="card-body">
             <p style="font-size:0.8rem;margin-bottom:1rem;">Combines 4 models (Bivariate, HSROC, Copula, Exact Binomial) using inverse-variance weighting for robust estimates.</p>
             <div class="grid" style="grid-template-columns:repeat(4,1fr);gap:0.5rem;margin-bottom:1rem;">
-              <label class="checkbox-group"><input type="checkbox" id="ensembleBivariate" checked> Bivariate</label>
-              <label class="checkbox-group"><input type="checkbox" id="ensembleHSROC" checked> HSROC</label>
-              <label class="checkbox-group"><input type="checkbox" id="ensembleCopula" checked> Copula</label>
-              <label class="checkbox-group"><input type="checkbox" id="ensembleExact" checked> Exact</label>
+              <label class="checkbox-group"><input type="checkbox" id="ensembleBivariate" checked aria-label="Ensemble Meta-Analysis"> Bivariate</label>
+              <label class="checkbox-group"><input type="checkbox" id="ensembleHSROC" checked aria-label="Ensemble Meta-Analysis"> HSROC</label>
+              <label class="checkbox-group"><input type="checkbox" id="ensembleCopula" checked aria-label="Ensemble Meta-Analysis"> Copula</label>
+              <label class="checkbox-group"><input type="checkbox" id="ensembleExact" checked aria-label="Ensemble Meta-Analysis"> Exact</label>
             </div>
             <button class="btn btn-primary btn-sm" onclick="runEnsembleAnalysis()">Run Ensemble</button>
             <div id="ensembleResults" style="margin-top:1rem;"></div>
@@ -2125,15 +2125,15 @@
           <div class="card">
             <div class="card-header"><h3 class="card-title">Include Sections</h3></div>
             <div class="card-body">
-              <label class="checkbox-group"><input type="checkbox" id="incMethods" checked> Methods Section</label>
-              <label class="checkbox-group"><input type="checkbox" id="incSummary" checked> Summary Statistics</label>
-              <label class="checkbox-group"><input type="checkbox" id="incForest" checked> Forest Plots</label>
-              <label class="checkbox-group"><input type="checkbox" id="incSROC" checked> SROC Curve</label>
-              <label class="checkbox-group"><input type="checkbox" id="incBias" checked> Publication Bias</label>
-              <label class="checkbox-group"><input type="checkbox" id="incHet" checked> Heterogeneity Analysis</label>
-              <label class="checkbox-group"><input type="checkbox" id="incQUADAS" checked> QUADAS-2 Assessment</label>
-              <label class="checkbox-group"><input type="checkbox" id="incAdvanced" checked> Advanced Statistics</label>
-              <label class="checkbox-group"><input type="checkbox" id="incStudyTable" checked> Study Characteristics Table</label>
+              <label class="checkbox-group"><input type="checkbox" id="incMethods" checked aria-label="Include Sections"> Methods Section</label>
+              <label class="checkbox-group"><input type="checkbox" id="incSummary" checked aria-label="Include Sections"> Summary Statistics</label>
+              <label class="checkbox-group"><input type="checkbox" id="incForest" checked aria-label="Include Sections"> Forest Plots</label>
+              <label class="checkbox-group"><input type="checkbox" id="incSROC" checked aria-label="Include Sections"> SROC Curve</label>
+              <label class="checkbox-group"><input type="checkbox" id="incBias" checked aria-label="Include Sections"> Publication Bias</label>
+              <label class="checkbox-group"><input type="checkbox" id="incHet" checked aria-label="Include Sections"> Heterogeneity Analysis</label>
+              <label class="checkbox-group"><input type="checkbox" id="incQUADAS" checked aria-label="Include Sections"> QUADAS-2 Assessment</label>
+              <label class="checkbox-group"><input type="checkbox" id="incAdvanced" checked aria-label="Include Sections"> Advanced Statistics</label>
+              <label class="checkbox-group"><input type="checkbox" id="incStudyTable" checked aria-label="Include Sections"> Study Characteristics Table</label>
             </div>
           </div>
           <div class="card">
@@ -4583,7 +4583,7 @@ function addStudy(data = null, options = {}) {
     <div class="study-row" id="${id}">
       <div class="study-header">
         <input type="text" class="form-input form-input-sm" placeholder="Study name (e.g., Smith 2020)"
-               value="${escapeHTML(displayName)}" data-field="name" style="max-width:250px;" onchange="handleStudyChange('${id}')">
+               value="${escapeHTML(displayName)}" data-field="name" style="max-width:250px;" onchange="handleStudyChange('${id}')" aria-label="Study name (e.g., Smith 2020)">
         <div style="display:flex;gap:0.5rem;align-items:center;">
           <span class="validation-indicator" id="${id}-indicator"></span>
           <button class="btn btn-secondary btn-sm" onclick="toggleQuadas('${id}')" title="QUADAS-2">Q2</button>
@@ -4594,27 +4594,27 @@ function addStudy(data = null, options = {}) {
         <div class="study-input-group">
           <label>TP</label>
           <input type="number" class="form-input form-input-sm form-input-mono"
-                 value="${d.tp ?? ''}" data-field="tp" min="0" placeholder="0" onchange="handleStudyChange('${id}')">
+                 value="${d.tp ?? ''}" data-field="tp" min="0" placeholder="0" onchange="handleStudyChange('${id}')" aria-label="TP">
         </div>
         <div class="study-input-group">
           <label>FP</label>
           <input type="number" class="form-input form-input-sm form-input-mono"
-                 value="${d.fp ?? ''}" data-field="fp" min="0" placeholder="0" onchange="handleStudyChange('${id}')">
+                 value="${d.fp ?? ''}" data-field="fp" min="0" placeholder="0" onchange="handleStudyChange('${id}')" aria-label="FP">
         </div>
         <div class="study-input-group">
           <label>FN</label>
           <input type="number" class="form-input form-input-sm form-input-mono"
-                 value="${d.fn ?? ''}" data-field="fn" min="0" placeholder="0" onchange="handleStudyChange('${id}')">
+                 value="${d.fn ?? ''}" data-field="fn" min="0" placeholder="0" onchange="handleStudyChange('${id}')" aria-label="FN">
         </div>
         <div class="study-input-group">
           <label>TN</label>
           <input type="number" class="form-input form-input-sm form-input-mono"
-                 value="${d.tn ?? ''}" data-field="tn" min="0" placeholder="0" onchange="handleStudyChange('${id}')">
+                 value="${d.tn ?? ''}" data-field="tn" min="0" placeholder="0" onchange="handleStudyChange('${id}')" aria-label="TN">
         </div>
         <div class="study-input-group">
           <label>Covariate</label>
           <input type="number" class="form-input form-input-sm form-input-mono"
-                 value="${d.covariate ?? ''}" data-field="covariate" step="any" placeholder="-" onchange="handleStudyChange('${id}')">
+                 value="${d.covariate ?? ''}" data-field="covariate" step="any" placeholder="-" onchange="handleStudyChange('${id}')" aria-label="Covariate">
         </div>
       </div>
       <div class="quadas-section" id="${id}-quadas" style="display:none;">
@@ -4623,7 +4623,7 @@ function addStudy(data = null, options = {}) {
         <div class="quadas-grid">
           <div class="quadas-item">
             <span>Patient Selection</span>
-            <select data-quadas="patient" onchange="handleStudyChange('${id}')">
+            <select data-quadas="patient" onchange="handleStudyChange('${id}')" aria-label="Covariate">
               <option value="">-</option>
               <option value="low">Low</option>
               <option value="high">High</option>
@@ -4632,7 +4632,7 @@ function addStudy(data = null, options = {}) {
           </div>
           <div class="quadas-item">
             <span>Index Test</span>
-            <select data-quadas="index" onchange="handleStudyChange('${id}')">
+            <select data-quadas="index" onchange="handleStudyChange('${id}')" aria-label="Input">
               <option value="">-</option>
               <option value="low">Low</option>
               <option value="high">High</option>
@@ -4641,7 +4641,7 @@ function addStudy(data = null, options = {}) {
           </div>
           <div class="quadas-item">
             <span>Reference Standard</span>
-            <select data-quadas="reference" onchange="handleStudyChange('${id}')">
+            <select data-quadas="reference" onchange="handleStudyChange('${id}')" aria-label="Input">
               <option value="">-</option>
               <option value="low">Low</option>
               <option value="high">High</option>
@@ -4650,7 +4650,7 @@ function addStudy(data = null, options = {}) {
           </div>
           <div class="quadas-item">
             <span>Flow & Timing</span>
-            <select data-quadas="flow" onchange="handleStudyChange('${id}')">
+            <select data-quadas="flow" onchange="handleStudyChange('${id}')" aria-label="Input">
               <option value="">-</option>
               <option value="low">Low</option>
               <option value="high">High</option>
@@ -4662,7 +4662,7 @@ function addStudy(data = null, options = {}) {
         <div class="quadas-grid">
           <div class="quadas-item">
             <span>Patient Selection</span>
-            <select data-quadas="applic_patient" onchange="handleStudyChange('${id}')">
+            <select data-quadas="applic_patient" onchange="handleStudyChange('${id}')" aria-label="Input">
               <option value="">-</option>
               <option value="low">Low</option>
               <option value="high">High</option>
@@ -4671,7 +4671,7 @@ function addStudy(data = null, options = {}) {
           </div>
           <div class="quadas-item">
             <span>Index Test</span>
-            <select data-quadas="applic_index" onchange="handleStudyChange('${id}')">
+            <select data-quadas="applic_index" onchange="handleStudyChange('${id}')" aria-label="Input">
               <option value="">-</option>
               <option value="low">Low</option>
               <option value="high">High</option>
@@ -4680,7 +4680,7 @@ function addStudy(data = null, options = {}) {
           </div>
           <div class="quadas-item">
             <span>Reference Std</span>
-            <select data-quadas="applic_reference" onchange="handleStudyChange('${id}')">
+            <select data-quadas="applic_reference" onchange="handleStudyChange('${id}')" aria-label="Input">
               <option value="">-</option>
               <option value="low">Low</option>
               <option value="high">High</option>
@@ -10111,18 +10111,18 @@ function renderComparisonInputs() {
       <div class="study-row" style="margin-bottom:0.5rem;">
         <div class="study-header">
           <input type="text" class="form-input form-input-sm" value="${escapeHTML(study.name)}"
-            onchange="ComparisonState.studies[${idx}].name=this.value" style="max-width:150px;">
+            onchange="ComparisonState.studies[${idx}].name=this.value" style="max-width:150px;" aria-label="Form input">
           <button class="btn-remove" onclick="removeComparisonStudy(${idx})">×</button>
         </div>
         <div class="study-inputs">
           <div class="study-input-group"><label>TP</label><input type="number" class="form-input form-input-sm"
-            onchange="updateComparisonData(${idx},'${test}','tp',this.value)" min="0"></div>
+            onchange="updateComparisonData(${idx},'${test}','tp',this.value)" min="0" aria-label="TP"></div>
           <div class="study-input-group"><label>FP</label><input type="number" class="form-input form-input-sm"
-            onchange="updateComparisonData(${idx},'${test}','fp',this.value)" min="0"></div>
+            onchange="updateComparisonData(${idx},'${test}','fp',this.value)" min="0" aria-label="FP"></div>
           <div class="study-input-group"><label>FN</label><input type="number" class="form-input form-input-sm"
-            onchange="updateComparisonData(${idx},'${test}','fn',this.value)" min="0"></div>
+            onchange="updateComparisonData(${idx},'${test}','fn',this.value)" min="0" aria-label="FN"></div>
           <div class="study-input-group"><label>TN</label><input type="number" class="form-input form-input-sm"
-            onchange="updateComparisonData(${idx},'${test}','tn',this.value)" min="0"></div>
+            onchange="updateComparisonData(${idx},'${test}','tn',this.value)" min="0" aria-label="TN"></div>
         </div>
       </div>
     `;
@@ -10363,7 +10363,7 @@ function updateNetworkInputs() {
     NetworkState.tests.push({ name: `Test ${i+1}`, id: i });
     namesHtml += `<div class="form-group"><label class="form-label">Test ${i+1} Name</label>
       <input type="text" class="form-input form-input-sm" id="networkTest${i}" value="Test ${i+1}"
-        onchange="NetworkState.tests[${i}].name=this.value"></div>`;
+        onchange="NetworkState.tests[${i}].name=this.value" aria-label="Test ${i+1} Name"></div>`;
   }
   namesHtml += '</div>';
   document.getElementById('networkTestNames').innerHTML = namesHtml;
@@ -10386,7 +10386,7 @@ function renderNetworkStudies() {
     html += `<div class="card" style="margin-bottom:1rem;">
       <div class="card-header">
         <input type="text" class="form-input form-input-sm" value="${escapeHTML(study.name)}"
-          onchange="NetworkState.studies[${idx}].name=this.value" style="max-width:200px;">
+          onchange="NetworkState.studies[${idx}].name=this.value" style="max-width:200px;" aria-label="Form input">
         <button class="btn-remove" onclick="removeNetworkStudy(${idx})">×</button>
       </div>
       <div class="card-body">
@@ -10396,18 +10396,18 @@ function renderNetworkStudies() {
       html += `<div style="border:1px solid var(--border);border-radius:8px;padding:0.5rem;">
         <label class="checkbox-group" style="margin-bottom:0.5rem;">
           <input type="checkbox" id="netStudy${idx}Test${tIdx}"
-            onchange="toggleNetworkTest(${idx},${tIdx},this.checked)"> ${escapeHTML(test.name)}
+            onchange="toggleNetworkTest(${idx},${tIdx},this.checked)" aria-label="Net Study${idx}Test${t Idx}"> ${escapeHTML(test.name)}
         </label>
         <div id="netStudy${idx}Test${tIdx}Inputs" style="display:none;">
           <div class="study-inputs" style="grid-template-columns:repeat(4,1fr);">
             <div class="study-input-group"><label>TP</label><input type="number" class="form-input form-input-sm"
-              onchange="updateNetworkStudyData(${idx},${tIdx},'tp',this.value)" min="0"></div>
+              onchange="updateNetworkStudyData(${idx},${tIdx},'tp',this.value)" min="0" aria-label="TP"></div>
             <div class="study-input-group"><label>FP</label><input type="number" class="form-input form-input-sm"
-              onchange="updateNetworkStudyData(${idx},${tIdx},'fp',this.value)" min="0"></div>
+              onchange="updateNetworkStudyData(${idx},${tIdx},'fp',this.value)" min="0" aria-label="FP"></div>
             <div class="study-input-group"><label>FN</label><input type="number" class="form-input form-input-sm"
-              onchange="updateNetworkStudyData(${idx},${tIdx},'fn',this.value)" min="0"></div>
+              onchange="updateNetworkStudyData(${idx},${tIdx},'fn',this.value)" min="0" aria-label="FN"></div>
             <div class="study-input-group"><label>TN</label><input type="number" class="form-input form-input-sm"
-              onchange="updateNetworkStudyData(${idx},${tIdx},'tn',this.value)" min="0"></div>
+              onchange="updateNetworkStudyData(${idx},${tIdx},'tn',this.value)" min="0" aria-label="TN"></div>
           </div>
         </div>
       </div>`;
@@ -16993,7 +16993,7 @@ PET,Study4,50,7,4,39`;
   document.getElementById('networkTestInputs').innerHTML = `
     <div class="form-group">
       <label class="form-label">Network Data (CSV: Test, Study, TP, FP, FN, TN)</label>
-      <textarea id="networkDataInput" class="form-control" rows="10">${exampleData}</textarea>
+      <textarea id="networkDataInput" class="form-control" rows="10" aria-label="Network Data (CSV: Test, Study, TP, FP, FN, TN)">${exampleData}</textarea>
     </div>
   `;
 }
@@ -17366,7 +17366,7 @@ function loadLCMExample() {
   document.getElementById('lcmTestInputs').innerHTML = `
     <div class="form-group">
       <label class="form-label">Cross-Classification Data (all test combinations)</label>
-      <textarea id="lcmDataInput" class="form-control" rows="10">Test1,Test2,Test3,Count
+      <textarea id="lcmDataInput" class="form-control" rows="10" aria-label="Cross-Classification Data (all test combinations)">Test1,Test2,Test3,Count
 1,1,1,45
 1,1,0,12
 1,0,1,8
@@ -19421,19 +19421,19 @@ function generatePRISMADTA() {
     <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.5rem;margin-bottom:1rem;">
       <div class="form-group">
         <label class="form-label">Identified</label>
-        <input type="number" id="prismaIdentified" class="form-control form-input-sm" value="${identified}">
+        <input type="number" id="prismaIdentified" class="form-control form-input-sm" value="${identified}" aria-label="Identified">
       </div>
       <div class="form-group">
         <label class="form-label">Duplicates</label>
-        <input type="number" id="prismaDuplicates" class="form-control form-input-sm" value="${duplicates}">
+        <input type="number" id="prismaDuplicates" class="form-control form-input-sm" value="${duplicates}" aria-label="Duplicates">
       </div>
       <div class="form-group">
         <label class="form-label">Screened Out</label>
-        <input type="number" id="prismaExcluded" class="form-control form-input-sm" value="${excluded}">
+        <input type="number" id="prismaExcluded" class="form-control form-input-sm" value="${excluded}" aria-label="Screened Out">
       </div>
       <div class="form-group">
         <label class="form-label">FT Excluded</label>
-        <input type="number" id="prismaFTExcluded" class="form-control form-input-sm" value="${ftExcluded}">
+        <input type="number" id="prismaFTExcluded" class="form-control form-input-sm" value="${ftExcluded}" aria-label="FT Excluded">
       </div>
     </div>
     <div style="display:flex;gap:0.5rem;margin-bottom:1rem;">
@@ -25581,11 +25581,11 @@ const updateStudyTableFast = debounce(function() {
     const tr = document.createElement('tr');
     tr.innerHTML = `
       <td>${i + 1}</td>
-      <td><input type="text" value="${escapeHTML(s.study || '')}" onchange="updateStudy(${i},'study',this.value)"></td>
-      <td><input type="number" value="${s.tp}" onchange="updateStudy(${i},'tp',+this.value)"></td>
-      <td><input type="number" value="${s.fp}" onchange="updateStudy(${i},'fp',+this.value)"></td>
-      <td><input type="number" value="${s.fn}" onchange="updateStudy(${i},'fn',+this.value)"></td>
-      <td><input type="number" value="${s.tn}" onchange="updateStudy(${i},'tn',+this.value)"></td>
+      <td><input type="text" value="${escapeHTML(s.study || '')}" onchange="updateStudy(${i},'study',this.value)" aria-label="Input"></td>
+      <td><input type="number" value="${s.tp}" onchange="updateStudy(${i},'tp',+this.value)" aria-label="Input"></td>
+      <td><input type="number" value="${s.fp}" onchange="updateStudy(${i},'fp',+this.value)" aria-label="Input"></td>
+      <td><input type="number" value="${s.fn}" onchange="updateStudy(${i},'fn',+this.value)" aria-label="Input"></td>
+      <td><input type="number" value="${s.tn}" onchange="updateStudy(${i},'tn',+this.value)" aria-label="Input"></td>
       <td>${((s.tp/(s.tp+s.fn))*100).toFixed(1)}%</td>
       <td>${((s.tn/(s.tn+s.fp))*100).toFixed(1)}%</td>
       <td><button class="btn btn-danger btn-sm" onclick="removeStudy(${i})">X</button></td>
@@ -26349,7 +26349,7 @@ async function searchPubMed(query) {
 }
 
 function showPubMedSearch() {
-  const html = '<div><div class="form-group"><label class="form-label">Search PubMed for DTA Studies</label><div style="display:flex;gap:0.5rem;"><input type="text" id="pubmedQuery" class="form-input" placeholder="e.g., COVID-19 rapid antigen test diagnostic accuracy"><button class="btn btn-primary" onclick="doPubMedSearch()">Search</button></div></div><div id="pubmedResults" style="max-height:400px;overflow-y:auto;margin-top:1rem;"></div></div>';
+  const html = '<div><div class="form-group"><label class="form-label">Search PubMed for DTA Studies</label><div style="display:flex;gap:0.5rem;"><input type="text" id="pubmedQuery" class="form-input" placeholder="e.g., COVID-19 rapid antigen test diagnostic accuracy" aria-label="Pubmed Query"><button class="btn btn-primary" onclick="doPubMedSearch()">Search</button></div></div><div id="pubmedResults" style="max-height:400px;overflow-y:auto;margin-top:1rem;"></div></div>';
 
   showModal('PubMed Search', html, 'lg');
 }
