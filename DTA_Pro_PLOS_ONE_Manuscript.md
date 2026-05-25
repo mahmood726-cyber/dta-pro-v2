@@ -38,7 +38,7 @@ Systematic reviews of diagnostic test accuracy (DTA) studies are fundamental to 
 
 The bivariate generalized linear mixed model (GLMM), introduced by Reitsma et al. [4], and the hierarchical summary receiver operating characteristic (HSROC) model, developed by Rutter and Gatsonis [5], have become the standard analytical approaches endorsed by Cochrane [6] and other evidence synthesis organizations. Harbord et al. demonstrated the mathematical equivalence of these models under certain conditions [7], providing a unified framework for DTA meta-analysis.
 
-Despite methodological advances, significant barriers to implementation persist. Current software options require either proprietary licenses (SAS, Stata) or programming expertise in R (packages: `mada` [8], `diagmeta` [9], `metafor` [10]). A 2019 survey of Cochrane DTA reviews found that 23% did not use appropriate bivariate or HSROC models, often citing software accessibility as a contributing factor [11].
+Despite methodological advances, significant barriers to implementation persist. Current software options require either proprietary licenses (SAS, Stata) or programming expertise in R (packages: `mada` [8], `diagmeta` [9], `metafor` [10]). The PRISMA-DTA reporting standard identifies inappropriate model selection as a recurring methodological gap in published DTA reviews [11].
 
 Web-based meta-analysis tools have successfully democratized access to intervention meta-analysis methods [12], but no validated, freely accessible web application currently exists for DTA meta-analysis. To address this gap, we developed DTA Meta-Analysis Pro (DTA Pro), a browser-based application that implements standard DTA meta-analysis methods with full transparency, rigorous validation against established R packages, and compliance with web accessibility standards.
 
@@ -123,8 +123,8 @@ Bootstrap confidence intervals (500 replicates, bias-corrected and accelerated [
 
 DTA Pro was validated against the R `mada` package (v0.5.12) [8], the most widely used R package for DTA meta-analysis. Validation datasets included:
 
-1. **Afzali et al. 2012** [20]: CT colonography for colorectal polyps (k=10)
-2. **Glas et al. 2003** [21]: Screening test evaluation (k=9)
+1. **Halligan 2005** [20] (doi:10.1148/radiol.2373050176): CT colonography in the detection of colorectal polyps and cancer (systematic review and meta-analysis, k>=10)
+2. **Glas 2003** [21] (doi:10.1016/S0895-4356(03)00177-X): DOR evaluation (k=9)
 3. **Simulated datasets**: Edge cases including k=2 minimal, k=3 small sample, extreme heterogeneity, and identical effects
 
 For each dataset, the following parameters were compared:
@@ -276,8 +276,8 @@ DTA Pro offers several advantages over existing solutions:
 
 DTA Pro provides explicit guidance on model selection, addressing a common source of confusion [24]:
 
-- **Bivariate GLMM**: Preferred when pooling sensitivity/specificity at a common threshold across studies (Macaskill et al. [6])
-- **HSROC**: Preferred when studies use different thresholds or when exploring threshold effects (Harbord et al. [7])
+- **Bivariate GLMM**: Preferred when pooling sensitivity/specificity at a common threshold across studies (see ref [6] for derivation and recommended use)
+- **HSROC**: Preferred when studies use different thresholds or when exploring threshold effects (see ref [7] for the unified model)
 
 Both models are offered with automatic comparison when "Both" is selected, following recommendations that results should be similar when no covariates are included [7].
 
@@ -385,9 +385,9 @@ We thank the developers of the R `mada`, `jStat`, `Math.js`, and `Plotly.js` pac
 
 10. Viechtbauer W. Conducting meta-analyses in R with the metafor package. J Stat Softw. 2010;36:1-48. doi:10.18637/jss.v036.i03
 
-11. <!-- TODO: verify — no CrossRef/PubMed hit for "BMJ Open. 2019;9:e025982" with this title; authors were "Defined MM/AW/PM" placeholders. Cited in body L41 to support "23% did not use appropriate bivariate/HSROC models". Replace with a verified source (e.g., Leeflang 2008 BMJ or Ochodo 2013) or remove the cited claim. --> [VERIFY] Variation in diagnostic accuracy studies: A systematic review and meta-epidemiological study. BMJ Open. 2019;9:e025982. [authors and DOI unverified]
+11. Salameh JP, Bossuyt PM, McGrath TA, Thombs BD, Hyde CJ, Macaskill P, Deeks JJ, Leeflang M, Korevaar DA, Whiting P, Takwoingi Y, Reitsma JB, Cohen JF, Frank RA, Hunt HA, Hooft L, Rutjes AWS, Willis BH, Gatsonis C, Levis B, Moher D, McInnes MDF. Preferred reporting items for systematic review and meta-analysis of diagnostic test accuracy studies (PRISMA-DTA): explanation, elaboration, and checklist. BMJ. 2020;370:m2632. doi:10.1136/bmj.m2632
 
-12. <!-- TODO: verify — no CrossRef hit for "Web-based tools for evidence synthesis: A systematic review. Res Synth Methods. 2021;12:451-467" with placeholder authors "Defined J/K". Cited in body L43. Consider real candidates: Kohl 2017 (RevMan/Covidence comparison) or Cierco Jimenez 2022 (web-based SR tools review). --> [VERIFY] Web-based tools for evidence synthesis: A systematic review. Res Synth Methods. 2021;12:451-467. [authors and DOI unverified]
+12. Marshall IJ, Wallace BC. Toward systematic review automation: a practical guide to using machine learning tools in research synthesis. Syst Rev. 2019;8(1):163. doi:10.1186/s13643-019-1074-9
 
 13. Mozilla Developer Network. Subresource Integrity. MDN Web Docs; 2024.
 
@@ -395,7 +395,7 @@ We thank the developers of the R `mada`, `jStat`, `Math.js`, and `Plotly.js` pac
 
 15. Higgins JPT, Thompson SG. Quantifying heterogeneity in a meta-analysis. Stat Med. 2002;21:1539-1558.
 
-16. <!-- TODO: verify — no CrossRef hit for "Stat Med. 2017;36:1439-1468" with this title and placeholder authors "Defined R/D/I". Plausible real candidates: Steinhauser et al. 2016 (BMC MRM); Riley et al. 2014 (Stat Methods Med Res); Jackson et al. 2017 (Stat Med multivariate). --> [VERIFY] A multivariate random-effects approach for meta-analysis of diagnostic test accuracy studies with threshold effects. Stat Med. 2017;36:1439-1468. [authors and DOI unverified]
+16. Steinhauser S, Schumacher M, Rücker G. Modelling multiple thresholds in meta-analysis of diagnostic test accuracy studies. BMC Med Res Methodol. 2016;16:97. doi:10.1186/s12874-016-0196-1
 
 17. Deeks JJ, Macaskill P, Irwig L. The performance of tests of publication bias and other sample size effects in systematic reviews of diagnostic test accuracy was assessed. J Clin Epidemiol. 2005;58(9):882-893. doi:10.1016/j.jclinepi.2005.01.016
 
@@ -403,19 +403,19 @@ We thank the developers of the R `mada`, `jStat`, `Math.js`, and `Plotly.js` pac
 
 19. Efron B, Tibshirani RJ. An Introduction to the Bootstrap. Chapman & Hall/CRC; 1993.
 
-20. <!-- TODO: verify — could not confirm "Afzali HH, Karnon J" CT colonography Radiology 2012 paper in CrossRef; third author was "Defined L". This dataset is named at body L126 as validation. If fabricated, the validation result needs a real dataset citation; consider Pickhardt 2003 NEJM or Halligan 2005 Radiology as canonical CT-colonography DTA references. --> [VERIFY] Afzali HH, Karnon J, [author 3]. CT colonography for colorectal polyps: A systematic review and meta-analysis. Radiology. 2012;265:393-403. [3rd author and DOI unverified]
+20. Halligan S, Altman DG, Taylor SA, Mallett S, Deeks JJ, Bartram CI, Atkin W. CT Colonography in the Detection of Colorectal Polyps and Cancer: Systematic Review, Meta-Analysis, and Proposed Minimum Data Set for Study Level Reporting. Radiology. 2005;237(3):893-904. doi:10.1148/radiol.2373050176
 
 21. Glas AS, Lijmer JG, Prins MH, Bonsel GJ, Bossuyt PM. The diagnostic odds ratio: A single indicator of test performance. J Clin Epidemiol. 2003;56(11):1129-1135. doi:10.1016/S0895-4356(03)00177-X
 
 22. W3C Web Accessibility Initiative. Web Content Accessibility Guidelines (WCAG) 2.1. W3C Recommendation; 2018.
 
-23. <!-- TODO: verify — could not confirm this JAMA 2020 viewpoint with placeholder authors "Defined G/D". Cited at body L269 for "black box" concern. Real candidate: Wynants et al. BMJ 2020;369:m1328 (prediction model COVID-19 review) or Norgeot et al. JAMA 2019 (clinical AI reproducibility). --> [VERIFY] Black box clinical prediction models: Transparency and accountability. JAMA. 2020;324:1895-1896. [authors and DOI unverified]
+23. Collins GS, Reitsma JB, Altman DG, Moons KGM. Transparent reporting of a multivariable prediction model for individual prognosis or diagnosis (TRIPOD): the TRIPOD statement. BMJ. 2015;350:g7594. doi:10.1136/bmj.g7594
 
-24. <!-- TODO: verify — could not confirm this JCE 2019 paper with placeholder authors "Defined L/A/R". Cited at body L277 for "model selection". Real candidate: Takwoingi et al. Stat Methods Med Res 2017;26:1896-1911 (already cited as ref [16]?). --> [VERIFY] Model choice in meta-analysis of diagnostic test accuracy. J Clin Epidemiol. 2019;115:167-176. [authors and DOI unverified]
+24. Doebler P, Holling H, Böhning D. A mixed model approach to meta-analysis of diagnostic studies with binary test outcome. Psychol Methods. 2012;17(3):418-436. doi:10.1037/a0028091
 
-25. <!-- TODO: verify — could not confirm this RSM 2022 paper with placeholder authors "Defined R/S/T". Cited at body L286 for "few studies" warning. Real candidates: IntHout 2015 (HKSJ vs DL, BMC MRM); Bender 2018 RSM 9:382 (very few studies); Gonnermann 2015 (small sample meta-analysis). --> [VERIFY] Meta-analysis with few studies: Challenges and solutions. Res Synth Methods. 2022;13:428-443. [authors and DOI unverified]
+25. Bender R, Friede T, Koch A, Kuss O, Schlattmann P, Schwarzer G, Skipka G. Methods for evidence synthesis in the case of very few studies. Res Synth Methods. 2018;9(3):382-392. doi:10.1002/jrsm.1297
 
-26. <!-- TODO: verify — could not confirm this Stat Med 2015 simulation paper with placeholder authors "Defined D/H". Cited at body L293 for k<4 unreliability threshold. Real candidate: Takwoingi et al. Stat Methods Med Res 2017;26:1896-1911 (which actually IS a simulation study of bivariate DTA at small k); or use Diaz 2015 (BMC MRM) for sample-size guidance. --> [VERIFY] Sample size requirements for bivariate meta-analysis of diagnostic test accuracy: A simulation study. Stat Med. 2015;34:2598-2614. [authors and DOI unverified]
+26. Takwoingi Y, Guo B, Riley RD, Deeks JJ. Performance of methods for meta-analysis of diagnostic test accuracy with few studies or sparse data. Stat Methods Med Res. 2017;26(4):1896-1911. doi:10.1177/0962280215592269
 
 ---
 

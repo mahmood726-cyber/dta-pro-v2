@@ -69,7 +69,7 @@ Overall, the manuscript meets PLOS ONE criteria for scientific rigor and technic
 
 **Specific Methodological Comments:**
 
-1. **Line 3587 (bivariateGLMM function):** The bivariate normal assumption for random effects is standard but should be noted as a limitation. Consider adding a reference to Takwoingi et al. (2017) who discuss departures from this assumption.
+1. **bivariateGLMM function (around line 3587):** The bivariate normal assumption for random effects is standard but should be noted as a limitation. Consider adding a reference to Takwoingi et al. (2017) (doi:10.1177/0962280215592269) who discuss departures from this assumption.
 
 2. **Line 4252 (deeksTest function):** The Deeks test is known to have low power with fewer than 10 studies. The software currently shows a warning but should quantify this limitation more explicitly (e.g., "With k=7 studies, this test has approximately 30% power to detect meaningful asymmetry").
 
