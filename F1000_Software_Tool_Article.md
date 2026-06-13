@@ -98,7 +98,7 @@ All analytic states are controlled through explicit user-configurable parameters
 | Validation scope | Primary DTA comparison includes pooled estimates, CI bounds, variance components, derived metrics, edge cases, and HSROC checks. | S2_Complete_Validation_Results.md |
 | Pass summary | 27/27 PASS (100%) | S2_Complete_Validation_Results.md |
 | Expanded totals | 45/45 passed (100%). | S2_Complete_Validation_Results.md |
-| Tolerance criteria | Â±0.005 (probability scale), Â±0.01 (variance components) | S2_Complete_Validation_Results.md |
+| Tolerance criteria | ±0.005 (probability scale), ±0.01 (variance components) | S2_Complete_Validation_Results.md |
 <!-- R_VALIDATION_TABLE_END -->
 ### Core functionality exposed in the interface
 - Interactive data ingestion and validation controls
